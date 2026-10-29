@@ -11,7 +11,7 @@
 <body>
 <header class="top"><div class="wrap">
   <a class="logo" href="#top"><i>案</i>案镜</a>
-  <nav aria-label="页面导航"><a href="#show">功能</a><a href="#try">试一试</a><a href="#claims">请求库</a><a href="#trust">引用与数据</a><a href="#faq">常见问题</a></nav>
+  <nav aria-label="页面导航"><a href="#about">案镜是什么</a><a href="#show">功能</a><a href="#try">试一试</a><a href="#claims">请求库</a><a href="#trust">引用与数据</a><a href="#faq">常见问题</a></nav>
   <a class="btn light" href="app/">体验演示</a>
 </div></header>
 
@@ -26,6 +26,24 @@
     <p class="note">演示使用虚构的案件材料，页面里的结果是在本机真实运行案镜后保存下来的。</p>
   </div>
 </section>
+
+<section class="about" id="about"><div class="wrap">
+  <div class="head">
+    <div><p class="eyebrow">案镜是什么</p><h2>面向律师的办案自动化工具</h2></div>
+    <p>案镜装在律师自己的电脑上，处理一个案件从材料到文书的工作：把合同、工资流水、聊天记录、对方说明这些案卷材料，整理成每一处都能核对的办案成果。</p>
+  </div>
+  <ol class="flow">
+    <li><b>案卷材料</b><span>txt、docx、可提取文字的 pdf；拖进来就解析成可以逐段引用的原文</span></li>
+    <li><b>事实</b><span>逐条抽取，每条带着原文出处；律师采用、存疑、排除或改写</span></li>
+    <li><b>要件与金额</b><span>按要件逐项核对，每项请求单独测算，缺什么直接列出来</span></li>
+    <li class="hi"><b>文书</b><span>只用律师确认过的事实起草，引用落在脚注，逐条核对</span></li>
+  </ol>
+  <div class="rules">
+    <div><i>01</i><b>每个结论，都能回到原文</b><span>事实、要件、金额、文书里的每一处，点开就是它在材料里的那一句。</span></div>
+    <div><i>02</i><b>关键的两步，由律师确认</b><span>确认事实之前先看审阅清单；审核定稿时，有阻断项就不能定稿。</span></div>
+    <div><i>03</i><b>默认在本机运行</b><span>不连外部服务，外部请求 0 次；接入模型时，发送去哪里逐条可见。</span></div>
+  </div>
+</div></section>
 
 <section class="show" id="show">
   <div class="wrap">
@@ -111,7 +129,7 @@
   <p class="eyebrow">视频</p>
   <h2>看一个案件怎么办</h2>
   <p>一个演示案件，从委托走到定稿。</p>
-  <div class="player"><video src="assets/film.mp4" poster="assets/film-poster.jpg" controls playsinline preload="metadata" style="position:absolute;inset:0;width:100%;height:100%;opacity:1;filter:none">宣传片：一个案件从委托到定稿</video></div>
+  <div class="player"><video src="assets/film.mp4" poster="assets/film-poster.jpg" controls playsinline preload="metadata" class="film">宣传片：一个案件从委托到定稿</video></div>
 </div></section>
 
 <section class="faq" id="faq"><div class="wrap grid">
