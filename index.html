@@ -1,0 +1,248 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>案镜 · 面向律师的办案自动化</title>
+<meta name="description" content="案镜把案卷材料整理成可以追溯、可以核对的办案成果：事实回到原文，要件逐项核对，文书引用逐条核对，再做期限和归档。目前聚焦劳动争议。">
+<link rel="icon" type="image/svg+xml" href="app/favicon.svg">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="top"><div class="wrap">
+  <a class="logo" href="#top"><i>案</i>案镜</a>
+  <nav aria-label="页面导航"><a href="#show">功能</a><a href="#try">试一试</a><a href="#claims">劳动争议</a><a href="#trust">引用与数据</a><a href="#faq">常见问题</a></nav>
+  <a class="btn light" href="app/">体验演示</a>
+</div></header>
+
+<main id="top">
+<section class="hero">
+  <div class="bg" aria-hidden="true"></div>
+  <div class="wrap">
+    <span class="pill">目前聚焦劳动争议 · 默认在本机运行</span>
+    <h1>面向律师的<br>办案自动化</h1>
+    <p class="lead">导入案卷材料，案镜抽取事实并标出原文出处，按要件核对缺口，找出材料之间对不上的地方；再起草文书、逐条核对引用，最后推算期限、整理归档。每一步由律师确认。</p>
+    <div class="cta"><a class="btn light" href="app/">体验演示<span class="arr">→</span></a><a class="btn ghost" href="#video">看视频</a></div>
+    <p class="note">演示使用虚构的案件材料，页面里的结果是在本机真实运行案镜后保存下来的。</p>
+  </div>
+</section>
+
+<section class="show" id="show">
+  <div class="wrap">
+    <p class="eyebrow">案镜怎么用</p>
+    <h2>一个案件里的材料、事实、证据和文书，互相关联</h2>
+  </div>
+  <div class="stage">
+    <div class="wrap">
+      <div class="tabs" role="tablist" aria-label="工作面" id="stabs"></div>
+      <p class="tabdesc" id="sdesc" aria-live="polite"></p>
+      <div class="frame"><div class="bar" aria-hidden="true"><i></i><i></i><i></i></div><img id="simg" src="assets/read.jpg" alt="" width="2400" height="1500"></div>
+    </div>
+  </div>
+</section>
+
+<section class="dark try" id="try"><div class="wrap">
+  <div class="head">
+    <h2>金额怎么算，引用能不能被发现，<span>在这里直接试。</span></h2>
+    <p>下面两个小工具在你的浏览器里运行，不上传、不保存你输入的内容。金额口径与案镜里的一致，口径有分歧的地方直接写出来。</p>
+  </div>
+  <div class="calc">
+    <div class="panel">
+      <div class="ctabs" role="tablist" aria-label="请求" id="ctabs"></div>
+      <div id="cform"></div>
+    </div>
+    <div class="result" id="cout" aria-live="polite"></div>
+  </div>
+  <div class="cite">
+    <div>
+      <h3>引用核对：伪造的法条能不能被发现</h3>
+      <p class="sub">下面是申请书里的一段。试着把方括号里的编号改成一个不存在的，比如 劳动合同法-99，再点核对。</p>
+      <div class="panel" style="margin-top:20px"><div class="fld" style="margin:0"><label for="ctext">申请书片段</label>
+        <textarea id="ctext" spellcheck="false">根据《中华人民共和国劳动合同法》第十条，建立劳动关系应当订立书面劳动合同[劳动合同法-10]；第八十二条规定，用人单位自用工之日起超过一个月不满一年未与劳动者订立书面劳动合同的，应当向劳动者每月支付二倍的工资[劳动合同法-82]。</textarea></div>
+        <button class="btn dark run" id="cbtn" type="button">核对引用<span class="arr">→</span></button></div>
+    </div>
+    <div>
+      <div id="cres" aria-live="polite"><p class="small" style="margin:0">点“核对引用”，逐条看每个引用在法源库里是否存在。</p></div>
+      <p class="small">这里只演示“引用是否存在”一项。案镜里还会核对正文引用是否登记了来源、事实是否由律师确认、日期和金额是否与确认的事实一致，任何一项不通过都不能定稿。</p>
+    </div>
+  </div>
+</div></section>
+
+<section class="feats" id="flow"><div class="wrap">
+  <div class="top">
+    <div><p class="eyebrow">从材料到归档</p><h2>办案中的每一步，都有对应的工作台</h2></div>
+    <p>案件内只有三个工作面：读卷、对表、成文。期限、质证和归档从顶栏进入。</p>
+  </div>
+  <div class="rail" id="rail" tabindex="0" aria-label="功能卡片，可横向滚动">
+    <article class="card"><h3>卷宗目录与原文</h3><div class="pic"><img src="assets/c_dossier.jpg" alt="读卷：左侧卷宗目录，中间按纸面排版的原文" loading="lazy" width="960" height="720"></div><p>支持 txt、md、docx 和可提取文字的 pdf，可拖拽上传，也可以绑定案件文件夹同步新文件。每一段都有段号，点开就是原文。</p></article>
+    <article class="card"><h3>事实标在原文上</h3><div class="pic"><img src="assets/c_facts.jpg" alt="读卷：原文里的高亮与右侧事实一一对应" loading="lazy" width="960" height="720"></div><p>抽出的事实直接高亮在原文里，右侧逐条采用、存疑或排除，也可以改写表述，材料原话保留。键盘就能走完一遍。</p></article>
+    <article class="card"><h3>两份材料对不上，并排看</h3><div class="pic"><img src="assets/c_compare.jpg" alt="两份材料的原文并排显示，各自高亮冲突的那一句" loading="lazy" width="960" height="720"></div><p>入职日期、离职日期、工资金额、社保月份，以及对方说法和我方记录之间的冲突，两处原文并排放，由律师判断。</p></article>
+    <article class="card"><h3>确认前先看清单</h3><div class="pic"><img src="assets/c_review.jpg" alt="确认事实前的审阅：将确认几条、几条未表态、哪些被改写" loading="lazy" width="960" height="720"></div><p>确认之前，列出将确认几条、几条还没表态、哪些关键数据和表述被改过。确认之后，文书只使用已确认的事实。</p></article>
+    <article class="card"><h3>要件逐行对照</h3><div class="pic"><img src="assets/c_table.jpg" alt="对表：要件逐行列出认定的事实、证据、对方说法和状态" loading="lazy" width="960" height="720"></div><p>选一项请求，要件逐行列出认定的事实、证据、对方怎么说和状态。每条事实后面跟着出处编号，点开就是原文。</p></article>
+    <article class="card"><h3>测算与证据缺口</h3><div class="pic"><img src="assets/c_cite.jpg" alt="对表右侧：金额测算、证据缺口和点开的原文出处" loading="lazy" width="960" height="720"></div><p>每项请求单独测算，口径有分歧的写明需律师判断。缺的材料列成清单，可以复制发给当事人，不把当事人说法当成已证事实。</p></article>
+    <article class="card"><h3>质证意见，可以改写</h3><div class="pic"><img src="assets/c_cross.jpg" alt="质证意见：真实性、合法性、关联性、证明力四项" loading="lazy" width="960" height="720"></div><p>对方证据逐份给出真实性、合法性、关联性、证明力的意见和建议追问。律师改写的意见进入文书，系统原文保留。</p></article>
+    <article class="card"><h3>文书带脚注</h3><div class="pic"><img src="assets/c_draft.jpg" alt="成文：按纸面排版的仲裁申请书" loading="lazy" width="960" height="720"></div><p>按程序阶段生成仲裁申请书、起诉状、答辩状。每段可以单独修改，引用显示为脚注，每次保存是新版本，可导出 Word。</p></article>
+    <article class="card"><h3>时间线与期限</h3><div class="pic"><img src="assets/c_timeline.jpg" alt="读卷的时间线视图：入职、催签、离职等事件按日期排列" loading="lazy" width="960" height="720"></div><p>事实按日期排成时间线，点一条回到原文。录入起算日期后推算仲裁时效、起诉期限，可导出日历。</p></article>
+    <article class="card"><h3>归档清单</h3><div class="pic"><img src="assets/c_archive.jpg" alt="归档清单：哪一项已有材料，哪一项还空着" loading="lazy" width="960" height="720"></div><p>定稿后按清单整理归档，空缺项一目了然。也可以粘贴法院短信，解析案号并推荐匹配的案件。</p></article>
+  </div>
+  <div class="railnav"><button type="button" aria-label="向左" id="rprev">←</button><button type="button" aria-label="向右" id="rnext">→</button></div>
+</div></section>
+
+<section class="dark claims" id="claims"><div class="wrap grid">
+  <div>
+    <p class="eyebrow">劳动争议</p>
+    <h2>一个案件可以同时主张多项请求，劳动者和用人单位两方都能用</h2>
+    <div class="list" role="tablist" aria-label="请求" id="clist"></div>
+    <p class="note">请求的要件、口径和条文都是初稿，页面上统一标“待核对”，律师核对后才能对外使用。</p>
+  </div>
+  <div class="pic"><img id="cpic" src="assets/table.jpg" alt="对表页面：按请求逐行核对要件" loading="lazy" width="2400" height="1500"><div class="cap" id="ccap"></div></div>
+</div></section>
+
+<section class="trust" id="trust"><div class="wrap">
+  <p class="eyebrow">引用与数据</p>
+  <h2>能确定的交给代码核对，判断留给律师</h2>
+  <div class="two">
+    <div class="box"><img src="assets/blocked.jpg" alt="成文页：草稿引用了不存在的法条，核对栏显示阻断，定稿按钮锁住" loading="lazy" width="2400" height="1500"><div><h3>伪造的引用，当场拦截</h3><p>成文页有一个“伪造引用测试”，向草稿里加入一条不存在的法条。核对立刻写明是哪一条、为什么，定稿按钮锁住。通过的检查项折叠起来，只显示需要处理的。</p></div></div>
+    <div class="box"><img src="assets/dataflow.jpg" alt="数据去向：本机离线模式，外部请求 0 次" loading="lazy" width="2400" height="1500" style="object-position:center top"><div><h3>数据去向，看得见</h3><p>默认是本机离线模式，不向任何外部服务发送材料，请求记录为空。配置外部模型后，每次运行前确认发送内容，材料先脱敏；只记录时间、环节、地址和大小，不记录正文。</p></div></div>
+  </div>
+</div></section>
+
+<section class="video" id="video"><div class="wrap">
+  <p class="eyebrow">视频</p>
+  <h2>看一个案件怎么办</h2>
+  <p>用同一个演示案件，从导入材料走到定稿。</p>
+  <div class="player" role="img" aria-label="宣传视频占位"><img src="assets/read.jpg" alt="" loading="lazy" width="2400" height="1500"><div><b>宣传视频制作中</b><span>完成后会放在这里</span></div></div>
+</div></section>
+
+<section class="faq" id="faq"><div class="wrap grid">
+  <div><h2>常见问题</h2><p>律所常问的几件事。没有覆盖到的，欢迎直接联系我们。</p></div>
+  <div>
+    <details><summary>客户材料会发到哪里？</summary><p>取决于你选择的模型服务。离线模式不发出任何外部请求；接入外部模型时，服务地址、请求次数和发送大小都会在“设置 · 数据去向”里列出，是否使用由你决定。</p></details>
+    <details><summary>用外部或中转模型，数据安全怎么保证？</summary><p>我们不对数据安全做绝对承诺。能做到的是：发送去哪里你看得见，只记录元信息不记录正文，发送前脱敏并经你确认。试用建议只用脱敏或虚构的材料；敏感信息是否交给外部服务，按所里的规定和当事人的同意办理。</p></details>
+    <details><summary>出了错谁负责？</summary><p>案镜是辅助工具，结论由律师审核并负责。引用是否存在、引文是否在原文、日期金额是否一致，由代码核对；法律适用留给律师判断。</p></details>
+    <details><summary>会不会替代律师？</summary><p>不会。策略、取舍、和解、风险偏好始终属于律师。案镜减少的是翻卷宗、对数据、整理格式这类重复劳动。</p></details>
+    <details><summary>和普通的 AI 问答有什么区别？</summary><p>问答给你一段话。案镜围绕一个案件工作：材料、事实、要件、证据、文书共用同一份资料，每条结论可以回到原文，改一处，相关结果同步变化。</p></details>
+    <details><summary>法条、案例的真实性怎么保证？</summary><p>文书里的每处引用，由代码核对是否存在于法源库；不存在的会被阻断。但“存在”不等于“适用正确”，适用性由律师判断。法源库以人工核对为准，并标注核对日期；尚未核对的标“待核对”，演示用的合成案例会标明不得作为真实引用。</p></details>
+    <details><summary>现在支持哪些案由和功能？</summary><div><p>目前聚焦劳动争议，请求库有六项：二倍工资差额、经济补偿、违法解除赔偿金、加班费、拖欠工资、未休年休假工资。其中二倍工资差额的事实可由材料自动抽取；其余请求的事实，需要律师在对表里关联到要件。这六项的要件、口径和条文目前都是待核对的初稿。我们不声称已覆盖所有案由。</p>
+      <div class="scope" style="margin-top:14px"><div><h4>已经可用</h4><ul><li>材料导入、读卷与事实审阅、矛盾并排、时间线</li><li>要件核对、金额测算、证据目录、质证意见（可改写）</li><li>文书起草与引用核对、导出 Word</li><li>劳动者一方的申请书、起诉状；用人单位一方的答辩状初稿</li><li>期限、归档、法院短信、法源库导入</li></ul></div>
+      <div><h4>暂未提供</h4><ul><li>扫描件识别（OCR）</li><li>用人单位一方的质证意见模板</li><li>劳动争议以外的案由</li><li>当事人补充材料的公开上传链接</li><li>法院自动立案（立案由律师亲自完成）</li></ul></div></div></div></details>
+    <details><summary>能不能部署在所里的内网？</summary><p>案镜以本地安装为主，数据放在你的电脑上。模型服务地址可以配置，也可以指向所里自己的服务。具体方式请与我们沟通。</p></details>
+    <details><summary>文书能导出到 Word 吗？</summary><p>能。文书导出为 docx，证据目录导出为 xlsx，也可以导出成果包。导出之后在 Word 里的修改不会回到系统，系统只记录导出的版本。</p></details>
+  </div>
+</div></section>
+</main>
+
+<footer><div class="wrap">
+  <div><a class="logo" href="#top"><i>案</i>案镜</a><p style="margin-top:12px">面向律师的办案自动化</p><p>东昕公司</p></div>
+  <div><h4>页面</h4><a href="#show">功能</a><a href="#try">试一试</a><a href="#claims">劳动争议</a><a href="#faq">常见问题</a><a href="app/">体验演示</a></div>
+  <div><h4>联系</h4><p>联系方式：<span data-todo>【待补充】</span></p><p>邮箱：<span data-todo>【待补充】</span></p></div>
+  <p class="fine">演示中的案件、人物与公司均为虚构。案镜是辅助工具，结论由律师审核并负责。</p>
+</div></footer>
+
+<script>
+(function () {
+  function esc(s) { return String(s).replace(/[&<>]/g, function (c) { return { '&': '&amp;', '<': '&lt;', '>': '&gt;' }[c] }) }
+  function tabs(host, items, pick, cls) {
+    host.innerHTML = ''
+    items.forEach(function (it, i) {
+      var b = document.createElement('button'); b.type = 'button'; b.setAttribute('role', 'tab'); b.setAttribute('aria-selected', i === 0)
+      b.innerHTML = it.html || esc(it.name); if (cls) b.className = cls
+      b.onclick = function () { Array.prototype.forEach.call(host.children, function (x) { x.setAttribute('aria-selected', x === b) }); pick(it) }
+      host.appendChild(b)
+    })
+    pick(items[0])
+  }
+
+  // 产品展示
+  var SHOW = [
+    { name: '读卷', img: 'read', alt: '读卷页：卷宗目录、原文纸面和事实栏', d: '材料按纸面排版，抽出的事实直接标在原文上。点一条事实，就是它在原文里的位置；两份材料对不上，并排看两处原文。' },
+    { name: '对表', img: 'table', alt: '对表页：要件逐行对照，右侧测算', d: '选一项请求，要件逐行列出：认定的事实、证据、对方怎么说、状态。右侧是金额测算、证据缺口和关键数据。' },
+    { name: '成文', img: 'draft', alt: '成文页：仲裁申请书正文与核对栏', d: '文书只用律师确认过的事实。引用显示为脚注，点开看条文；每段可以修改，每次保存是新版本。' },
+    { name: '核对', img: 'blocked', alt: '成文页：引用不存在时阻断定稿', d: '引用的法条不在法源库里，核对当场写明原因，定稿按钮锁住。通过的检查项折叠起来，只显示要处理的。' },
+    { name: '时间线', img: 'timeline', alt: '读卷的时间线视图', d: '事实按日期排成时间线，对方说法单独标出。点一条事件，回到它在原文里的位置。' },
+  ]
+  var simg = document.getElementById('simg'), sdesc = document.getElementById('sdesc')
+  tabs(document.getElementById('stabs'), SHOW, function (it) { simg.src = 'assets/' + it.img + '.jpg'; simg.alt = it.alt; sdesc.textContent = it.d })
+
+  // 请求清单
+  var CL = [
+    { name: '二倍工资差额', law: '劳动合同法第 82 条等', d: '未订立书面劳动合同。起算、上限、时效逐项核对，金额自动测算。' },
+    { name: '经济补偿', law: '劳动合同法第 46、47 条', d: '按工作年限折算，不满六个月按半个月，满六个月按一年。' },
+    { name: '违法解除赔偿金', law: '劳动合同法第 48、87 条', d: '经济补偿标准的二倍；解除事由与程序的举证责任标在要件上。' },
+    { name: '加班费', law: '劳动法第 44 条', d: '工作日、休息日、法定节假日分别按 150%、200%、300% 测算。' },
+    { name: '拖欠工资', law: '劳动合同法第 30、85 条', d: '按逐月应发与实发核算；加付赔偿金的前提单独提示。' },
+    { name: '未休年休假工资', law: '职工带薪年休假条例第 3、5 条', d: '按日工资折算；300% 与另行支付 200% 的口径差异标为需律师判断。' },
+  ]
+  CL.forEach(function (c) { c.html = esc(c.name) + '<small>' + esc(c.d) + '<span class="law">' + esc(c.law) + '</span></small>' })
+  var ccap = document.getElementById('ccap')
+  tabs(document.getElementById('clist'), CL, function (c) { ccap.textContent = '对表：选中“' + c.name + '”后，要件逐行核对，右侧单独测算。我方身份选“用人单位”时，按举证责任起草答辩状初稿。' })
+
+  // 横向卡片
+  var rail = document.getElementById('rail')
+  document.getElementById('rprev').onclick = function () { rail.scrollBy({ left: -360, behavior: 'smooth' }) }
+  document.getElementById('rnext').onclick = function () { rail.scrollBy({ left: 360, behavior: 'smooth' }) }
+
+  // 金额测算（口径与案镜后端一致）
+  var DAY = 86400000
+  function pd(s) { var p = s.split('-').map(Number); return new Date(Date.UTC(p[0], p[1] - 1, p[2])) }
+  function cn(d) { return d.getUTCFullYear() + '年' + (d.getUTCMonth() + 1) + '月' + d.getUTCDate() + '日' }
+  function addMonths(d, n) { var t = d.getUTCMonth() + n, y = d.getUTCFullYear() + Math.floor(t / 12), m = ((t % 12) + 12) % 12, last = new Date(Date.UTC(y, m + 1, 0)).getUTCDate(); return new Date(Date.UTC(y, m, Math.min(d.getUTCDate(), last))) }
+  function monthsAndDays(start, end) { if (end < start) return [0, 0]; var m = 0; while (addMonths(start, m + 1) - DAY <= end) m++; var lastEnd = m ? new Date(addMonths(start, m) - DAY) : new Date(start - DAY); return [m, Math.round((end - lastEnd) / DAY)] }
+  var fmt = function (n) { return Math.round(n).toLocaleString('zh-CN') }
+  var fmt2 = function (n) { return n.toLocaleString('zh-CN', { minimumFractionDigits: 2, maximumFractionDigits: 2 }) }
+  function doubleWage(v) {
+    var hire = pd(v.hire), leave = pd(v.leave), base = +v.base
+    var start = addMonths(hire, 1), capEnd = new Date(addMonths(hire, 12) - DAY), end = leave < capEnd ? leave : capEnd
+    var md = monthsAndDays(start, end), months = Math.min(md[0], 11), days = md[1], partial = days && months < 11 ? base * days / 30 : 0
+    var j = ['月工资基数以约定工资计，是否按应得工资或实发工资计算需律师判断']
+    if (days && months < 11) j.push('不足一月的 ' + days + ' 天按 30 日折算，折算口径需律师判断')
+    return { amount: fmt(base * months + partial), formula: fmt(base) + ' 元 × ' + months + ' 个月' + (partial ? ' + ' + fmt(base) + ' 元 × ' + days + '/30' : ''), note: '计算期间：' + cn(start) + '至' + cn(end), j: j }
+  }
+  function sev(v) {
+    var md = monthsAndDays(pd(v.hire), pd(v.leave)), y = Math.floor(md[0] / 12), r = md[0] % 12, n = r >= 6 ? y + 1 : (r > 0 || md[1] > 0 ? y + 0.5 : y), w = +(v.avg || v.base)
+    var j = ['封顶规则：月工资高于当地上年度职工月平均工资三倍的，按三倍计，年限最高十二年；需按当地数据判断']
+    if (!v.avg) j.push('未填写解除前十二个月平均工资，暂按约定月工资计算，需律师判断')
+    return { n: n, w: w, y: y, r: r, j: j }
+  }
+  var CLAIMS = [
+    { name: '二倍工资差额', f: [['hire', '入职日期', 'date', '2023-03-01'], ['leave', '离职日期', 'date', '2024-02-29'], ['base', '月工资（元）', 'num', '15000']], run: doubleWage },
+    { name: '经济补偿', f: [['hire', '入职日期', 'date', '2020-03-01'], ['leave', '离职日期', 'date', '2024-02-29'], ['base', '月工资（元）', 'num', '15000'], ['avg', '解除前十二个月平均工资（元，选填）', 'num', '']],
+      run: function (v) { var r = sev(v); return { amount: fmt(r.w * r.n), formula: fmt(r.w) + ' 元 × ' + r.n, note: '工作年限 ' + r.y + ' 年 ' + r.r + ' 个月（折算 ' + r.n + ' 个月工资）', j: r.j } } },
+    { name: '违法解除赔偿金', f: [['hire', '入职日期', 'date', '2020-03-01'], ['leave', '离职日期', 'date', '2024-02-29'], ['base', '月工资（元）', 'num', '15000'], ['avg', '解除前十二个月平均工资（元，选填）', 'num', '']],
+      run: function (v) { var r = sev(v); return { amount: fmt(r.w * r.n * 2), formula: fmt(r.w) + ' 元 × ' + r.n + ' × 2', note: '经济补偿标准的二倍', j: ['赔偿金与经济补偿不能重复主张'].concat(r.j) } } },
+    { name: '加班费', f: [['base', '月工资（元）', 'num', '15000'], ['h1', '工作日延长工作时间（小时，累计）', 'num', '30'], ['h2', '休息日加班（小时，累计）', 'num', '16'], ['h3', '法定节假日加班（小时，累计）', 'num', '0']],
+      run: function (v) { var b = +v.base, h = b / 21.75 / 8, a = h * 1.5 * (+v.h1 || 0) + h * 2 * (+v.h2 || 0) + h * 3 * (+v.h3 || 0); return { amount: fmt2(a), formula: fmt(b) + ' ÷ 21.75 ÷ 8 = ' + fmt2(h) + ' 元/小时；按 150%、200%、300% 分别计', note: '', j: ['计算基数以约定工资计，是否按实发工资或扣除项后计算需律师判断', '月计薪天数按 21.75 天、日工作 8 小时折算，口径需律师判断'] } } },
+    { name: '未休年休假工资', f: [['base', '月工资（元）', 'num', '15000'], ['days', '应休未休天数', 'num', '5']],
+      run: function (v) { var d = +v.base / 21.75; return { amount: fmt2(d * (+v.days) * 2), formula: fmt(+v.base) + ' ÷ 21.75 = ' + fmt2(d) + ' 元/日；' + v.days + ' 天 × ' + fmt2(d) + ' × 200%', note: '', j: ['条例规定按日工资的 300% 支付，其中正常工资已发的，这里只计算另行支付的 200%；是否按 300% 主张，各地口径不同，需律师判断'] } } },
+  ]
+  var cur, form = document.getElementById('cform'), out = document.getElementById('cout')
+  function render() {
+    var v = {}, ok = true
+    cur.f.forEach(function (f) { var el = document.getElementById('f_' + f[0]); v[f[0]] = el.value; if (!el.value && f[1].indexOf('选填') < 0 && f[0] !== 'h3') ok = false })
+    if (!ok) { out.innerHTML = '<p class="empty">填完左侧的数据，这里显示测算结果。</p>'; return }
+    if (v.hire && v.leave && pd(v.leave) < pd(v.hire)) { out.innerHTML = '<p class="empty">离职日期早于入职日期，请检查。</p>'; return }
+    var r = cur.run(v)
+    out.innerHTML = '<div class="up">' + esc(cur.name) + ' · 测算结果</div><div class="big">' + r.amount + ' 元</div><div class="f">' + esc(r.formula) + '</div>' + (r.note ? '<div class="f">' + esc(r.note) + '</div>' : '') + r.j.map(function (x) { return '<div class="j">口径分歧：' + esc(x) + '</div>' }).join('')
+  }
+  tabs(document.getElementById('ctabs'), CLAIMS, function (c) {
+    cur = c
+    form.innerHTML = c.f.map(function (f) { return '<div class="fld"><label for="f_' + f[0] + '">' + f[1] + '</label><input id="f_' + f[0] + '" ' + (f[2] === 'date' ? 'type="date"' : 'type="number" min="0" step="any" inputmode="decimal"') + ' value="' + f[3] + '"></div>' }).join('')
+    c.f.forEach(function (f) { document.getElementById('f_' + f[0]).addEventListener('input', render) })
+    render()
+  })
+
+  // 引用核对
+  var IDS = ['劳动合同法-7', '劳动合同法-10', '劳动合同法-14', '劳动合同法-30', '劳动合同法-38', '劳动合同法-46', '劳动合同法-47', '劳动合同法-48', '劳动合同法-82', '劳动合同法-85', '劳动合同法-87',
+    '劳动合同法实施条例-5', '劳动合同法实施条例-6', '劳动合同法实施条例-7', '劳动争议调解仲裁法-27', '劳动法-44', '职工带薪年休假条例-3', '职工带薪年休假条例-5']
+  document.getElementById('cbtn').onclick = function () {
+    var t = document.getElementById('ctext').value, res = document.getElementById('cres'), seen = [], m, re = /\[([^\[\]\n]{2,40})\]/g
+    while ((m = re.exec(t))) if (seen.indexOf(m[1]) < 0) seen.push(m[1])
+    if (!seen.length) { res.innerHTML = '<p class="small" style="margin:0">没有找到方括号里的引用编号。</p>'; return }
+    var bad = seen.filter(function (x) { return IDS.indexOf(x) < 0 })
+    res.innerHTML = '<ul class="cites">' + seen.map(function (x) { var ok = IDS.indexOf(x) >= 0; return '<li class="' + (ok ? 'ok' : 'bad') + '"><b>' + (ok ? '✓' : '✗') + '</b>' + esc(x) + '：' + (ok ? '在法源库中，来源已找到' : '不在法源库中，可能是编造') + '</li>' }).join('') + '</ul>' +
+      (bad.length ? '<div class="verdict bad">阻断：文书引用了法源库中不存在的依据，不能定稿。</div>' : '<div class="verdict ok">这一项通过。法条是否适用本案，仍由律师判断。</div>')
+  }
+})()
+</script>
+</body>
+</html>

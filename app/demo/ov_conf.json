@@ -1,0 +1,180 @@
+{
+ "case": {
+  "id": "case-demo0001",
+  "name": "演示案件 · 未签书面劳动合同二倍工资差额",
+  "case_type": "劳动争议",
+  "stage": "仲裁申请前",
+  "our_side": "劳动者",
+  "number": "",
+  "lawyer": "",
+  "note": "全部材料为虚构演示数据",
+  "mode": "offline_demo",
+  "archived": false,
+  "is_demo": true,
+  "created_at": "2026-10-30T02:40:35",
+  "updated_at": "2026-10-30T02:40:35",
+  "material_count": 6,
+  "workflow_status": "事实已确认"
+ },
+ "steps": [
+  {
+   "id": "materials",
+   "name": "材料",
+   "group": "整理",
+   "status": "done",
+   "badge": "6 份"
+  },
+  {
+   "id": "facts",
+   "name": "事实",
+   "group": "整理",
+   "status": "done",
+   "badge": "已确认"
+  },
+  {
+   "id": "elements",
+   "name": "要件与矛盾",
+   "group": "核对",
+   "status": "attention",
+   "badge": "1 空缺 · 5 矛盾"
+  },
+  {
+   "id": "evidence",
+   "name": "证据",
+   "group": "核对",
+   "status": "attention",
+   "badge": "1 项缺口"
+  },
+  {
+   "id": "crossexam",
+   "name": "质证",
+   "group": "核对",
+   "status": "done",
+   "badge": "1 份"
+  },
+  {
+   "id": "documents",
+   "name": "文书与核对",
+   "group": "成果",
+   "status": "current",
+   "badge": "未生成"
+  },
+  {
+   "id": "deadlines",
+   "name": "期限",
+   "group": "收尾",
+   "status": "attention",
+   "badge": "有已逾期"
+  },
+  {
+   "id": "archive",
+   "name": "归档",
+   "group": "收尾",
+   "status": "todo",
+   "badge": "待定稿"
+  }
+ ],
+ "progress": 38,
+ "next": {
+  "key": "generate_doc",
+  "label": "生成文书",
+  "target": "documents",
+  "reason": "事实已确认，可以起草文书"
+ },
+ "risks": [
+  {
+   "level": "warn",
+   "text": "材料之间有 5 处对不上，需要你判断",
+   "target": "elements"
+  },
+  {
+   "level": "danger",
+   "text": "1 个要件没有材料支撑",
+   "target": "elements"
+  },
+  {
+   "level": "danger",
+   "text": "仲裁时效已过截止日 2025-02-28",
+   "target": "deadlines"
+  },
+  {
+   "level": "info",
+   "text": "要件库与法条尚待律师核对，核对前仅供内部使用",
+   "target": "elements"
+  }
+ ],
+ "metrics": {
+  "elements": {
+   "充分": 4,
+   "薄弱": 0,
+   "空缺": 1
+  },
+  "conflicts": 5,
+  "facts": 17,
+  "amount": 165000,
+  "claims": [
+   {
+    "title": "二倍工资差额",
+    "amount": 165000
+   }
+  ],
+  "gaps": 1,
+  "next_deadline": {
+   "name": "仲裁时效",
+   "due": "2025-02-28",
+   "days_left": -609
+  }
+ },
+ "procedure": {
+  "chain": [
+   "仲裁申请",
+   "仲裁审理",
+   "一审",
+   "二审",
+   "执行"
+  ],
+  "current": 0
+ },
+ "activity": [
+  {
+   "ts": "2026-10-30T02:40:35",
+   "action": "gate1.confirm",
+   "detail": "{\"confirmed\": 13, \"pending\": 4, \"field_changes\": 0}"
+  },
+  {
+   "ts": "2026-10-30T02:40:35",
+   "action": "fact.accept_all",
+   "detail": "{}"
+  },
+  {
+   "ts": "2026-10-30T02:40:35",
+   "action": "analysis.run",
+   "detail": "{\"facts\": 17}"
+  },
+  {
+   "ts": "2026-10-30T02:40:35",
+   "action": "material.add",
+   "detail": "{\"ext\": \".docx\", \"size\": 37036, \"status\": \"ok\"}"
+  },
+  {
+   "ts": "2026-10-30T02:40:35",
+   "action": "material.add",
+   "detail": "{\"ext\": \".txt\", \"size\": 331, \"status\": \"ok\"}"
+  },
+  {
+   "ts": "2026-10-30T02:40:35",
+   "action": "material.add",
+   "detail": "{\"ext\": \".txt\", \"size\": 833, \"status\": \"ok\"}"
+  },
+  {
+   "ts": "2026-10-30T02:40:35",
+   "action": "material.add",
+   "detail": "{\"ext\": \".pdf\", \"size\": 87465, \"status\": \"ok\"}"
+  },
+  {
+   "ts": "2026-10-30T02:40:35",
+   "action": "material.add",
+   "detail": "{\"ext\": \".pdf\", \"size\": 77479, \"status\": \"ok\"}"
+  }
+ ]
+}

@@ -1,0 +1,71 @@
+{
+ "id": "m-88fd41d4a4",
+ "case_id": "case-demo0001",
+ "filename": "对方说明.docx",
+ "ext": ".docx",
+ "size": 37036,
+ "sha1": "e7620b491cea037f7da7523249f3450ab7065ab3",
+ "category": "对方证据",
+ "party": "对方",
+ "parse_status": "ok",
+ "parse_message": "",
+ "page_count": 1,
+ "para_count": 9,
+ "created_at": "2026-10-30T02:40:34",
+ "chunks": [
+  {
+   "chunk_id": "m-88fd41d4a4:1:1",
+   "page": 1,
+   "seq": 1,
+   "text": "关于张伟入职及劳动合同签订情况的说明（演示数据）"
+  },
+  {
+   "chunk_id": "m-88fd41d4a4:1:2",
+   "page": 1,
+   "seq": 2,
+   "text": "张伟于2023年3月15日到我公司任软件工程师。"
+  },
+  {
+   "chunk_id": "m-88fd41d4a4:1:3",
+   "page": 1,
+   "seq": 3,
+   "text": "公司于2023年3月28日通过微信通知其到人事部门签订书面劳动合同，张伟未予配合，一直未签。"
+  },
+  {
+   "chunk_id": "m-88fd41d4a4:1:4",
+   "page": 1,
+   "seq": 4,
+   "text": "公司自2023年4月起为其缴纳社会保险。"
+  },
+  {
+   "chunk_id": "m-88fd41d4a4:1:5",
+   "page": 1,
+   "seq": 5,
+   "text": "张伟于2024年2月26日自行离职。"
+  },
+  {
+   "chunk_id": "m-88fd41d4a4:1:6",
+   "page": 1,
+   "seq": 6,
+   "text": "特此说明。"
+  },
+  {
+   "chunk_id": "m-88fd41d4a4:1:7",
+   "page": 1,
+   "seq": 7,
+   "text": "上海示例科技有限公司（公章）"
+  },
+  {
+   "chunk_id": "m-88fd41d4a4:1:8",
+   "page": 1,
+   "seq": 8,
+   "text": "2024年3月20日"
+  },
+  {
+   "chunk_id": "m-88fd41d4a4:1:9",
+   "page": 1,
+   "seq": 9,
+   "text": "（本文件为演示数据，人物与公司均为虚构。）"
+  }
+ ]
+}

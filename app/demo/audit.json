@@ -1,0 +1,93 @@
+[
+ {
+  "id": 13,
+  "ts": "2026-10-30T02:40:37",
+  "case_id": "case-demo0001",
+  "action": "gate2.finalize",
+  "detail": "{\"version\": 1}"
+ },
+ {
+  "id": 12,
+  "ts": "2026-10-30T02:40:37",
+  "case_id": "case-demo0001",
+  "action": "artifact.generate",
+  "detail": "{\"doc_type\": \"劳动人事争议仲裁申请书\", \"version\": 1}"
+ },
+ {
+  "id": 11,
+  "ts": "2026-10-30T02:40:37",
+  "case_id": "case-demo0001",
+  "action": "gate1.confirm",
+  "detail": "{\"confirmed\": 13, \"pending\": 4, \"field_changes\": 0}"
+ },
+ {
+  "id": 10,
+  "ts": "2026-10-30T02:40:37",
+  "case_id": "case-demo0001",
+  "action": "fact.accept_all",
+  "detail": "{}"
+ },
+ {
+  "id": 9,
+  "ts": "2026-10-30T02:40:37",
+  "case_id": "case-demo0001",
+  "action": "analysis.run",
+  "detail": "{\"facts\": 17}"
+ },
+ {
+  "id": 8,
+  "ts": "2026-10-30T02:40:37",
+  "case_id": "case-demo0001",
+  "action": "run.start",
+  "detail": "{\"mode\": \"offline_demo\"}"
+ },
+ {
+  "id": 7,
+  "ts": "2026-10-30T02:40:37",
+  "case_id": "case-demo0001",
+  "action": "material.add",
+  "detail": "{\"ext\": \".docx\", \"size\": 37036, \"status\": \"ok\"}"
+ },
+ {
+  "id": 6,
+  "ts": "2026-10-30T02:40:37",
+  "case_id": "case-demo0001",
+  "action": "material.add",
+  "detail": "{\"ext\": \".txt\", \"size\": 331, \"status\": \"ok\"}"
+ },
+ {
+  "id": 5,
+  "ts": "2026-10-30T02:40:37",
+  "case_id": "case-demo0001",
+  "action": "material.add",
+  "detail": "{\"ext\": \".txt\", \"size\": 833, \"status\": \"ok\"}"
+ },
+ {
+  "id": 4,
+  "ts": "2026-10-30T02:40:37",
+  "case_id": "case-demo0001",
+  "action": "material.add",
+  "detail": "{\"ext\": \".pdf\", \"size\": 87465, \"status\": \"ok\"}"
+ },
+ {
+  "id": 3,
+  "ts": "2026-10-30T02:40:37",
+  "case_id": "case-demo0001",
+  "action": "material.add",
+  "detail": "{\"ext\": \".pdf\", \"size\": 77479, \"status\": \"ok\"}"
+ },
+ {
+  "id": 2,
+  "ts": "2026-10-30T02:40:37",
+  "case_id": "case-demo0001",
+  "action": "material.add",
+  "detail": "{\"ext\": \".docx\", \"size\": 37135, \"status\": \"ok\"}"
+ },
+ {
+  "id": 1,
+  "ts": "2026-10-30T02:40:37",
+  "case_id": "case-demo0001",
+  "action": "case.create",
+  "detail": "{\"demo\": true}"
+ }
+]

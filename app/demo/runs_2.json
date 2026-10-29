@@ -1,0 +1,204 @@
+[
+ {
+  "id": "run-demo0002",
+  "case_id": "case-demo0001",
+  "status": "waiting_gate2",
+  "created_at": "2026-10-30T02:40:37",
+  "updated_at": "2026-10-30T02:40:37",
+  "steps": [
+   {
+    "id": "material_ingest",
+    "name": "材料解析",
+    "kind": "auto",
+    "status": "done",
+    "attempt": 1,
+    "summary": "6 份材料可用",
+    "error": "",
+    "degraded": false,
+    "output": {
+     "materials": 6
+    }
+   },
+   {
+    "id": "fact",
+    "name": "事实抽取",
+    "kind": "auto",
+    "status": "done",
+    "attempt": 1,
+    "summary": "17 条事实",
+    "error": "",
+    "degraded": false,
+    "output": {
+     "facts": 17
+    }
+   },
+   {
+    "id": "element_map",
+    "name": "要件核对",
+    "kind": "auto",
+    "status": "done",
+    "attempt": 1,
+    "summary": "4 充分 · 0 薄弱 · 1 空缺 · 5 处矛盾",
+    "error": "",
+    "degraded": false,
+    "output": {
+     "summary": {
+      "充分": 4,
+      "薄弱": 0,
+      "空缺": 1
+     },
+     "conflicts": 5
+    }
+   },
+   {
+    "id": "legal_analyst",
+    "name": "争点整理",
+    "kind": "auto",
+    "status": "done",
+    "attempt": 1,
+    "summary": "6 个争点与缺口",
+    "error": "",
+    "degraded": false,
+    "output": {
+     "issues": [
+      "入职日期不一致",
+      "离职日期不一致",
+      "社保首次缴费晚于入职月",
+      "约定月工资与实发不一致",
+      "对方称已通知签订，同日沟通记录显示仍在流程中",
+      "未过仲裁时效：空缺"
+     ],
+     "keywords": [
+      "二倍工资差额",
+      "仲裁时效"
+     ]
+    }
+   },
+   {
+    "id": "gate1",
+    "name": "律师确认事实",
+    "kind": "gate",
+    "status": "done",
+    "attempt": 2,
+    "summary": "律师已确认事实",
+    "error": "",
+    "degraded": false,
+    "output": {}
+   },
+   {
+    "id": "law_retrieval",
+    "name": "法条检索",
+    "kind": "auto",
+    "status": "done",
+    "attempt": 1,
+    "summary": "召回 9 条，按要件相关性选用 7 条",
+    "error": "",
+    "degraded": false,
+    "output": {
+     "recall": 9,
+     "selected": [
+      "劳动合同法-14",
+      "劳动合同法-82",
+      "劳动合同法实施条例-6",
+      "劳动合同法实施条例-7",
+      "劳动合同法-10",
+      "劳动合同法实施条例-5",
+      "劳动争议调解仲裁法-27"
+     ]
+    }
+   },
+   {
+    "id": "evidence",
+    "name": "证据梳理",
+    "kind": "auto",
+    "status": "done",
+    "attempt": 1,
+    "summary": "6 份证据，1 项缺口",
+    "error": "",
+    "degraded": false,
+    "output": {
+     "items": 6,
+     "gaps": 1
+    }
+   },
+   {
+    "id": "cross_exam",
+    "name": "质证",
+    "kind": "auto",
+    "status": "done",
+    "attempt": 1,
+    "summary": "1 份对方证据已生成质证意见",
+    "error": "",
+    "degraded": false,
+    "output": {
+     "items": 1
+    }
+   },
+   {
+    "id": "deadline_calc",
+    "name": "期限推算",
+    "kind": "auto",
+    "status": "done",
+    "attempt": 1,
+    "summary": "1 项期限已推算，6 项待录入",
+    "error": "",
+    "degraded": false,
+    "output": {
+     "computed": 1
+    }
+   },
+   {
+    "id": "draft",
+    "name": "文书起草",
+    "kind": "auto",
+    "status": "done",
+    "attempt": 1,
+    "summary": "劳动人事争议仲裁申请书 版本 1",
+    "error": "",
+    "degraded": false,
+    "output": {
+     "artifact": "art-demo0003"
+    }
+   },
+   {
+    "id": "verify",
+    "name": "引用核对",
+    "kind": "auto",
+    "status": "done",
+    "attempt": 1,
+    "summary": "没有阻断项，仍有需要律师判断的事项",
+    "error": "",
+    "degraded": false,
+    "output": {
+     "blocked": false
+    }
+   },
+   {
+    "id": "gate2",
+    "name": "律师审核定稿",
+    "kind": "gate",
+    "status": "waiting",
+    "attempt": 1,
+    "summary": "等待律师确认",
+    "error": "",
+    "degraded": false,
+    "output": {}
+   },
+   {
+    "id": "finalize",
+    "name": "定稿",
+    "kind": "auto",
+    "status": "pending",
+    "attempt": 0,
+    "summary": "",
+    "error": "",
+    "degraded": false,
+    "output": {}
+   }
+  ],
+  "settings_snapshot": {
+   "mode": "offline_demo",
+   "provider": null
+  }
+ }
+]

@@ -1,0 +1,251 @@
+{
+ "analysed": false,
+ "facts": [],
+ "fields": {},
+ "conflicts": [],
+ "elements": [
+  {
+   "id": "e1",
+   "name": "存在劳动关系",
+   "kind": "positive",
+   "authority": [
+    "劳动合同法-7"
+   ],
+   "fact_ids": [],
+   "material_ids": [],
+   "status": "空缺",
+   "note": "没有找到支撑事实或材料",
+   "detail": null,
+   "dispute": null,
+   "tag": null,
+   "claim_id": "labor-double-wage-82",
+   "claim_title": "二倍工资差额",
+   "burden": null,
+   "hint": [],
+   "manual": false
+  },
+  {
+   "id": "e2",
+   "name": "未订立书面劳动合同",
+   "kind": "positive",
+   "authority": [
+    "劳动合同法-10",
+    "劳动合同法-82"
+   ],
+   "fact_ids": [],
+   "material_ids": [],
+   "status": "空缺",
+   "note": "没有找到支撑事实或材料",
+   "detail": null,
+   "dispute": null,
+   "tag": null,
+   "claim_id": "labor-double-wage-82",
+   "claim_title": "二倍工资差额",
+   "burden": null,
+   "hint": [],
+   "manual": false
+  },
+  {
+   "id": "e3",
+   "name": "起算：用工满一个月的次日",
+   "kind": "calc",
+   "authority": [
+    "劳动合同法实施条例-6"
+   ],
+   "fact_ids": [],
+   "material_ids": [],
+   "status": "空缺",
+   "note": "缺少：hire_date",
+   "detail": null,
+   "dispute": null,
+   "tag": null,
+   "claim_id": "labor-double-wage-82",
+   "claim_title": "二倍工资差额",
+   "burden": null,
+   "hint": [],
+   "manual": false
+  },
+  {
+   "id": "e4",
+   "name": "上限：最长十一个月",
+   "kind": "calc",
+   "authority": [
+    "劳动合同法实施条例-6"
+   ],
+   "fact_ids": [],
+   "material_ids": [],
+   "status": "空缺",
+   "note": "缺少：hire_date、leave_date",
+   "detail": null,
+   "dispute": null,
+   "tag": null,
+   "claim_id": "labor-double-wage-82",
+   "claim_title": "二倍工资差额",
+   "burden": null,
+   "hint": [],
+   "manual": false
+  },
+  {
+   "id": "e5",
+   "name": "未过仲裁时效",
+   "kind": "limitation",
+   "authority": [
+    "劳动争议调解仲裁法-27"
+   ],
+   "fact_ids": [],
+   "material_ids": [],
+   "status": "空缺",
+   "note": "没有任何关于申请仲裁日期的材料",
+   "detail": null,
+   "dispute": "起算口径地区有分歧（按月分别起算 / 按终止起算），需律师判断",
+   "tag": null,
+   "claim_id": "labor-double-wage-82",
+   "claim_title": "二倍工资差额",
+   "burden": null,
+   "hint": [],
+   "manual": false
+  },
+  {
+   "id": "n1",
+   "name": "非因劳动者拒绝签订",
+   "kind": "negative",
+   "authority": [
+    "劳动合同法实施条例-5"
+   ],
+   "fact_ids": [],
+   "material_ids": [],
+   "status": "未提出",
+   "note": "对方尚未提出",
+   "detail": null,
+   "dispute": null,
+   "tag": "对方抗辩",
+   "claim_id": "labor-double-wage-82",
+   "claim_title": "二倍工资差额",
+   "burden": null,
+   "hint": [],
+   "manual": false
+  },
+  {
+   "id": "n2",
+   "name": "满一年未订立视为无固定期限合同的衔接",
+   "kind": "negative",
+   "authority": [
+    "劳动合同法-14",
+    "劳动合同法实施条例-7"
+   ],
+   "fact_ids": [],
+   "material_ids": [],
+   "status": "空缺",
+   "note": "缺少：hire_date、leave_date",
+   "detail": null,
+   "dispute": null,
+   "tag": null,
+   "claim_id": "labor-double-wage-82",
+   "claim_title": "二倍工资差额",
+   "burden": null,
+   "hint": [],
+   "manual": false
+  }
+ ],
+ "calc": {
+  "ok": false,
+  "missing": [
+   "入职日期",
+   "离职日期",
+   "月工资基数"
+  ],
+  "message": "缺少基础数据：入职日期、离职日期、月工资基数"
+ },
+ "timeline": [],
+ "summary": {
+  "充分": 0,
+  "薄弱": 0,
+  "空缺": 5
+ },
+ "claims": [
+  {
+   "claim_id": "labor-double-wage-82",
+   "key": "double-wage",
+   "title": "未订立书面劳动合同二倍工资差额",
+   "short": "二倍工资差额",
+   "legal_basis": [
+    "劳动合同法-82",
+    "劳动合同法实施条例-6"
+   ],
+   "needs_fields": [
+    "hire_date",
+    "leave_date",
+    "base_salary"
+   ],
+   "optional_fields": [],
+   "elements": 5,
+   "verified": false,
+   "note": "要件与口径为初稿，需律师逐条核对后方可对外使用。",
+   "calc": {
+    "ok": false,
+    "missing": [
+     "入职日期",
+     "离职日期",
+     "月工资基数"
+    ],
+    "message": "缺少基础数据：入职日期、离职日期、月工资基数"
+   },
+   "counts": {
+    "充分": 0,
+    "薄弱": 0,
+    "空缺": 5
+   },
+   "element_ids": [
+    "e1",
+    "e2",
+    "e3",
+    "e4",
+    "e5",
+    "n1",
+    "n2"
+   ]
+  }
+ ],
+ "selected_claims": [
+  "labor-double-wage-82"
+ ],
+ "field_specs": [
+  {
+   "key": "hire_date",
+   "label": "入职日期",
+   "kind": "date",
+   "unit": "",
+   "help": ""
+  },
+  {
+   "key": "leave_date",
+   "label": "离职日期",
+   "kind": "date",
+   "unit": "",
+   "help": ""
+  },
+  {
+   "key": "base_salary",
+   "label": "月工资基数",
+   "kind": "int",
+   "unit": "元",
+   "help": "约定月工资，作为计算基数"
+  },
+  {
+   "key": "arb_apply_date",
+   "label": "申请仲裁日期",
+   "kind": "date",
+   "unit": "",
+   "help": ""
+  }
+ ],
+ "gate1": {
+  "confirmed": false,
+  "confirmed_at": null
+ },
+ "element_library": {
+  "title": "二倍工资差额",
+  "verified_by": null,
+  "note": "要件与口径为初稿，需律师逐条核对后方可对外使用。"
+ }
+}

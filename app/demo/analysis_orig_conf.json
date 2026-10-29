@@ -1,0 +1,1052 @@
+{
+ "analysed": true,
+ "facts": [
+  {
+   "id": "f-086e5ec4",
+   "case_id": "case-demo0001",
+   "key": "social_last_month",
+   "value": "2024-02",
+   "content": "社保最后缴费月份：2024年2月",
+   "proposer": "我方",
+   "category": "社保",
+   "origin": "rule",
+   "status": "已确认",
+   "sources": [
+    {
+     "material_id": "m-762717a8e8",
+     "filename": "社保缴费记录.pdf",
+     "chunk_id": "m-762717a8e8:1:15",
+     "page": 1,
+     "seq": 15,
+     "quote": "2024年02月　已缴费"
+    }
+   ],
+   "quote_verified": true,
+   "created_at": "2026-10-30T02:40:35",
+   "updated_at": "2026-10-30T02:40:35",
+   "edited_from": null,
+   "links": []
+  },
+  {
+   "id": "f-3e02d58b",
+   "case_id": "case-demo0001",
+   "key": "employee_name",
+   "value": "张伟",
+   "content": "劳动者：张伟",
+   "proposer": "我方",
+   "category": "劳动关系",
+   "origin": "rule",
+   "status": "已确认",
+   "sources": [
+    {
+     "material_id": "m-98afb16117",
+     "filename": "入职通知.docx",
+     "chunk_id": "m-98afb16117:1:2",
+     "page": 1,
+     "seq": 2,
+     "quote": "致 张伟 先生"
+    }
+   ],
+   "quote_verified": true,
+   "created_at": "2026-10-30T02:40:35",
+   "updated_at": "2026-10-30T02:40:35",
+   "edited_from": null,
+   "links": []
+  },
+  {
+   "id": "f-42dec3c5",
+   "case_id": "case-demo0001",
+   "key": "pay_period",
+   "value": "2023-06~2024-02:15000",
+   "content": "2023年6月至2024年2月所属月份工资，每月实发 15,000 元",
+   "proposer": "我方",
+   "category": "工资",
+   "origin": "rule",
+   "status": "已确认",
+   "sources": [
+    {
+     "material_id": "m-782ebef293",
+     "filename": "工资银行流水.pdf",
+     "chunk_id": "m-782ebef293:1:8",
+     "page": 1,
+     "seq": 8,
+     "quote": "2023-07-10　工资（2023年6月）　15,000.00"
+    },
+    {
+     "material_id": "m-782ebef293",
+     "filename": "工资银行流水.pdf",
+     "chunk_id": "m-782ebef293:1:9",
+     "page": 1,
+     "seq": 9,
+     "quote": "2023-08-10　工资（2023年7月）　15,000.00"
+    },
+    {
+     "material_id": "m-782ebef293",
+     "filename": "工资银行流水.pdf",
+     "chunk_id": "m-782ebef293:1:10",
+     "page": 1,
+     "seq": 10,
+     "quote": "2023-09-10　工资（2023年8月）　15,000.00"
+    },
+    {
+     "material_id": "m-782ebef293",
+     "filename": "工资银行流水.pdf",
+     "chunk_id": "m-782ebef293:1:11",
+     "page": 1,
+     "seq": 11,
+     "quote": "2023-10-10　工资（2023年9月）　15,000.00"
+    },
+    {
+     "material_id": "m-782ebef293",
+     "filename": "工资银行流水.pdf",
+     "chunk_id": "m-782ebef293:1:12",
+     "page": 1,
+     "seq": 12,
+     "quote": "2023-11-10　工资（2023年10月）　15,000.00"
+    },
+    {
+     "material_id": "m-782ebef293",
+     "filename": "工资银行流水.pdf",
+     "chunk_id": "m-782ebef293:1:13",
+     "page": 1,
+     "seq": 13,
+     "quote": "2023-12-10　工资（2023年11月）　15,000.00"
+    },
+    {
+     "material_id": "m-782ebef293",
+     "filename": "工资银行流水.pdf",
+     "chunk_id": "m-782ebef293:1:14",
+     "page": 1,
+     "seq": 14,
+     "quote": "2024-01-10　工资（2023年12月）　15,000.00"
+    },
+    {
+     "material_id": "m-782ebef293",
+     "filename": "工资银行流水.pdf",
+     "chunk_id": "m-782ebef293:1:15",
+     "page": 1,
+     "seq": 15,
+     "quote": "2024-02-10　工资（2024年1月）　15,000.00"
+    },
+    {
+     "material_id": "m-782ebef293",
+     "filename": "工资银行流水.pdf",
+     "chunk_id": "m-782ebef293:1:16",
+     "page": 1,
+     "seq": 16,
+     "quote": "2024-03-10　工资（2024年2月）　15,000.00"
+    }
+   ],
+   "quote_verified": true,
+   "created_at": "2026-10-30T02:40:35",
+   "updated_at": "2026-10-30T02:40:35",
+   "edited_from": null,
+   "links": []
+  },
+  {
+   "id": "f-6eeb4d58",
+   "case_id": "case-demo0001",
+   "key": "pay_period",
+   "value": "2023-03~2023-05:12000",
+   "content": "2023年3月至2023年5月所属月份工资，每月实发 12,000 元",
+   "proposer": "我方",
+   "category": "工资",
+   "origin": "rule",
+   "status": "已确认",
+   "sources": [
+    {
+     "material_id": "m-782ebef293",
+     "filename": "工资银行流水.pdf",
+     "chunk_id": "m-782ebef293:1:5",
+     "page": 1,
+     "seq": 5,
+     "quote": "2023-04-10　工资（2023年3月）　12,000.00"
+    },
+    {
+     "material_id": "m-782ebef293",
+     "filename": "工资银行流水.pdf",
+     "chunk_id": "m-782ebef293:1:6",
+     "page": 1,
+     "seq": 6,
+     "quote": "2023-05-10　工资（2023年4月）　12,000.00"
+    },
+    {
+     "material_id": "m-782ebef293",
+     "filename": "工资银行流水.pdf",
+     "chunk_id": "m-782ebef293:1:7",
+     "page": 1,
+     "seq": 7,
+     "quote": "2023-06-10　工资（2023年5月）　12,000.00"
+    }
+   ],
+   "quote_verified": true,
+   "created_at": "2026-10-30T02:40:35",
+   "updated_at": "2026-10-30T02:40:35",
+   "edited_from": null,
+   "links": []
+  },
+  {
+   "id": "f-86c738d0",
+   "case_id": "case-demo0001",
+   "key": "hire_date",
+   "value": "2023-03-01",
+   "content": "入职日期：2023年3月1日",
+   "proposer": "我方",
+   "category": "劳动关系",
+   "origin": "rule",
+   "status": "已确认",
+   "sources": [
+    {
+     "material_id": "m-98afb16117",
+     "filename": "入职通知.docx",
+     "chunk_id": "m-98afb16117:1:4",
+     "page": 1,
+     "seq": 4,
+     "quote": "入职时间：2023年3月1日"
+    }
+   ],
+   "quote_verified": true,
+   "created_at": "2026-10-30T02:40:35",
+   "updated_at": "2026-10-30T02:40:35",
+   "edited_from": null,
+   "links": []
+  },
+  {
+   "id": "f-8f0d274c",
+   "case_id": "case-demo0001",
+   "key": "employer_name",
+   "value": "上海示例科技有限公司",
+   "content": "用人单位：上海示例科技有限公司",
+   "proposer": "我方",
+   "category": "劳动关系",
+   "origin": "rule",
+   "status": "已确认",
+   "sources": [
+    {
+     "material_id": "m-98afb16117",
+     "filename": "入职通知.docx",
+     "chunk_id": "m-98afb16117:1:8",
+     "page": 1,
+     "seq": 8,
+     "quote": "上海示例科技有限公司 人事行政部"
+    }
+   ],
+   "quote_verified": true,
+   "created_at": "2026-10-30T02:40:35",
+   "updated_at": "2026-10-30T02:40:35",
+   "edited_from": null,
+   "links": []
+  },
+  {
+   "id": "f-914f313c",
+   "case_id": "case-demo0001",
+   "key": "leave_date",
+   "value": "2024-02-26",
+   "content": "离职日期：2024年2月26日",
+   "proposer": "对方",
+   "category": "对方证据",
+   "origin": "rule",
+   "status": "候选",
+   "sources": [
+    {
+     "material_id": "m-88fd41d4a4",
+     "filename": "对方说明.docx",
+     "chunk_id": "m-88fd41d4a4:1:5",
+     "page": 1,
+     "seq": 5,
+     "quote": "于2024年2月26日自行离职"
+    }
+   ],
+   "quote_verified": true,
+   "created_at": "2026-10-30T02:40:35",
+   "updated_at": "2026-10-30T02:40:35",
+   "edited_from": null,
+   "links": []
+  },
+  {
+   "id": "f-98186a79",
+   "case_id": "case-demo0001",
+   "key": "position",
+   "value": "软件工程师",
+   "content": "岗位：软件工程师",
+   "proposer": "我方",
+   "category": "劳动关系",
+   "origin": "rule",
+   "status": "已确认",
+   "sources": [
+    {
+     "material_id": "m-98afb16117",
+     "filename": "入职通知.docx",
+     "chunk_id": "m-98afb16117:1:3",
+     "page": 1,
+     "seq": 3,
+     "quote": "担任软件工程师"
+    }
+   ],
+   "quote_verified": true,
+   "created_at": "2026-10-30T02:40:35",
+   "updated_at": "2026-10-30T02:40:35",
+   "edited_from": null,
+   "links": []
+  },
+  {
+   "id": "f-9da7970a",
+   "case_id": "case-demo0001",
+   "key": "notice_claim",
+   "value": "2023-03-28",
+   "content": "对方称已通知签订劳动合同（2023年3月28日），并称劳动者未予配合",
+   "proposer": "对方",
+   "category": "对方证据",
+   "origin": "rule",
+   "status": "候选",
+   "sources": [
+    {
+     "material_id": "m-88fd41d4a4",
+     "filename": "对方说明.docx",
+     "chunk_id": "m-88fd41d4a4:1:3",
+     "page": 1,
+     "seq": 3,
+     "quote": "于2023年3月28日通过微信通知其到人事部门签订书面劳动合同，张伟未予配合"
+    }
+   ],
+   "quote_verified": true,
+   "created_at": "2026-10-30T02:40:35",
+   "updated_at": "2026-10-30T02:40:35",
+   "edited_from": null,
+   "links": []
+  },
+  {
+   "id": "f-a83ec034",
+   "case_id": "case-demo0001",
+   "key": "leave_date",
+   "value": "2024-02-29",
+   "content": "离职日期：2024年2月29日",
+   "proposer": "我方",
+   "category": "离职",
+   "origin": "rule",
+   "status": "已确认",
+   "sources": [
+    {
+     "material_id": "m-efb12ece17",
+     "filename": "离职沟通.txt",
+     "chunk_id": "m-efb12ece17:1:2",
+     "page": 1,
+     "seq": 2,
+     "quote": "（2月29日）是最后一个工作日"
+    }
+   ],
+   "quote_verified": true,
+   "created_at": "2026-10-30T02:40:35",
+   "updated_at": "2026-10-30T02:40:35",
+   "edited_from": null,
+   "links": []
+  },
+  {
+   "id": "f-ada93891",
+   "case_id": "case-demo0001",
+   "key": "pay_day",
+   "value": "10",
+   "content": "发薪日：每月 10 日",
+   "proposer": "我方",
+   "category": "劳动关系",
+   "origin": "rule",
+   "status": "已确认",
+   "sources": [
+    {
+     "material_id": "m-98afb16117",
+     "filename": "入职通知.docx",
+     "chunk_id": "m-98afb16117:1:6",
+     "page": 1,
+     "seq": 6,
+     "quote": "每月10日通过银行转账发放"
+    }
+   ],
+   "quote_verified": true,
+   "created_at": "2026-10-30T02:40:35",
+   "updated_at": "2026-10-30T02:40:35",
+   "edited_from": null,
+   "links": []
+  },
+  {
+   "id": "f-b3f0f855",
+   "case_id": "case-demo0001",
+   "key": "hire_date",
+   "value": "2023-03-01",
+   "content": "入职日期：2023年3月1日",
+   "proposer": "我方",
+   "category": "沟通记录",
+   "origin": "rule",
+   "status": "已确认",
+   "sources": [
+    {
+     "material_id": "m-6cf0394c87",
+     "filename": "工作沟通记录.txt",
+     "chunk_id": "m-6cf0394c87:1:2",
+     "page": 1,
+     "seq": 2,
+     "quote": "2023-03-01 09:42 张伟：王经理早，我到公司了，在前台。"
+    }
+   ],
+   "quote_verified": true,
+   "created_at": "2026-10-30T02:40:35",
+   "updated_at": "2026-10-30T02:40:35",
+   "edited_from": null,
+   "links": []
+  },
+  {
+   "id": "f-c5f1f2a0",
+   "case_id": "case-demo0001",
+   "key": "contract_requests",
+   "value": "2023-03-20、2023-03-28、2023-06-15、2023-09-08",
+   "content": "劳动者于 4 个日期询问签订劳动合同：2023年3月20日、2023年3月28日、2023年6月15日、2023年9月8日",
+   "proposer": "我方",
+   "category": "沟通记录",
+   "origin": "rule",
+   "status": "已确认",
+   "sources": [
+    {
+     "material_id": "m-6cf0394c87",
+     "filename": "工作沟通记录.txt",
+     "chunk_id": "m-6cf0394c87:1:5",
+     "page": 1,
+     "seq": 5,
+     "quote": "2023-03-20 10:15 张伟：李老师，我入职快三周了，劳动合同什么时候签？"
+    },
+    {
+     "material_id": "m-6cf0394c87",
+     "filename": "工作沟通记录.txt",
+     "chunk_id": "m-6cf0394c87:1:7",
+     "page": 1,
+     "seq": 7,
+     "quote": "2023-03-28 14:05 张伟：李老师，合同的事情有消息吗？"
+    },
+    {
+     "material_id": "m-6cf0394c87",
+     "filename": "工作沟通记录.txt",
+     "chunk_id": "m-6cf0394c87:1:9",
+     "page": 1,
+     "seq": 9,
+     "quote": "2023-06-15 11:02 张伟：李老师，之前说的劳动合同还没签，我这边随时有空。"
+    },
+    {
+     "material_id": "m-6cf0394c87",
+     "filename": "工作沟通记录.txt",
+     "chunk_id": "m-6cf0394c87:1:11",
+     "page": 1,
+     "seq": 11,
+     "quote": "2023-09-08 16:40 张伟：合同这事能不能给个准信？"
+    }
+   ],
+   "quote_verified": true,
+   "created_at": "2026-10-30T02:40:35",
+   "updated_at": "2026-10-30T02:40:35",
+   "edited_from": null,
+   "links": []
+  },
+  {
+   "id": "f-d4fb188c",
+   "case_id": "case-demo0001",
+   "key": "base_salary",
+   "value": "15000",
+   "content": "约定月工资：15,000 元",
+   "proposer": "我方",
+   "category": "劳动关系",
+   "origin": "rule",
+   "status": "已确认",
+   "sources": [
+    {
+     "material_id": "m-98afb16117",
+     "filename": "入职通知.docx",
+     "chunk_id": "m-98afb16117:1:6",
+     "page": 1,
+     "seq": 6,
+     "quote": "月工资15000元"
+    }
+   ],
+   "quote_verified": true,
+   "created_at": "2026-10-30T02:40:35",
+   "updated_at": "2026-10-30T02:40:35",
+   "edited_from": null,
+   "links": []
+  },
+  {
+   "id": "f-eb085810",
+   "case_id": "case-demo0001",
+   "key": "contract_unsigned",
+   "value": "true",
+   "content": "公司自认：书面劳动合同一直未签",
+   "proposer": "对方",
+   "category": "对方证据",
+   "origin": "rule",
+   "status": "候选",
+   "sources": [
+    {
+     "material_id": "m-88fd41d4a4",
+     "filename": "对方说明.docx",
+     "chunk_id": "m-88fd41d4a4:1:3",
+     "page": 1,
+     "seq": 3,
+     "quote": "一直未签"
+    }
+   ],
+   "quote_verified": true,
+   "created_at": "2026-10-30T02:40:35",
+   "updated_at": "2026-10-30T02:40:35",
+   "edited_from": null,
+   "links": []
+  },
+  {
+   "id": "f-f53184a6",
+   "case_id": "case-demo0001",
+   "key": "hire_date",
+   "value": "2023-03-15",
+   "content": "入职日期：2023年3月15日",
+   "proposer": "对方",
+   "category": "对方证据",
+   "origin": "rule",
+   "status": "候选",
+   "sources": [
+    {
+     "material_id": "m-88fd41d4a4",
+     "filename": "对方说明.docx",
+     "chunk_id": "m-88fd41d4a4:1:2",
+     "page": 1,
+     "seq": 2,
+     "quote": "于2023年3月15日到我公司"
+    }
+   ],
+   "quote_verified": true,
+   "created_at": "2026-10-30T02:40:35",
+   "updated_at": "2026-10-30T02:40:35",
+   "edited_from": null,
+   "links": []
+  },
+  {
+   "id": "f-fbcade9f",
+   "case_id": "case-demo0001",
+   "key": "social_first_month",
+   "value": "2023-04",
+   "content": "社保首次缴费月份：2023年4月",
+   "proposer": "我方",
+   "category": "社保",
+   "origin": "rule",
+   "status": "已确认",
+   "sources": [
+    {
+     "material_id": "m-762717a8e8",
+     "filename": "社保缴费记录.pdf",
+     "chunk_id": "m-762717a8e8:1:5",
+     "page": 1,
+     "seq": 5,
+     "quote": "2023年04月　已缴费"
+    }
+   ],
+   "quote_verified": true,
+   "created_at": "2026-10-30T02:40:35",
+   "updated_at": "2026-10-30T02:40:35",
+   "edited_from": null,
+   "links": []
+  }
+ ],
+ "fields": {
+  "hire_date": {
+   "value": "2023-03-01",
+   "origin": "材料",
+   "label": "入职日期",
+   "display": "2023年3月1日"
+  },
+  "leave_date": {
+   "value": "2024-02-29",
+   "origin": "材料",
+   "label": "离职日期",
+   "display": "2024年2月29日"
+  },
+  "base_salary": {
+   "value": "15000",
+   "origin": "材料",
+   "label": "月工资基数",
+   "display": "15,000 元"
+  }
+ },
+ "conflicts": [
+  {
+   "id": "c-1568e2de",
+   "kind": "取值不一致",
+   "key": "hire_date",
+   "title": "入职日期不一致",
+   "description": "入职通知.docx：2023年3月1日；对方说明.docx：2023年3月15日",
+   "sides": [
+    {
+     "fact_id": "f-86c738d0",
+     "material_id": "m-98afb16117",
+     "filename": "入职通知.docx",
+     "chunk_id": "m-98afb16117:1:4",
+     "quote": "入职时间：2023年3月1日",
+     "proposer": "我方",
+     "label": "入职日期：2023年3月1日"
+    },
+    {
+     "fact_id": "f-f53184a6",
+     "material_id": "m-88fd41d4a4",
+     "filename": "对方说明.docx",
+     "chunk_id": "m-88fd41d4a4:1:2",
+     "quote": "于2023年3月15日到我公司",
+     "proposer": "对方",
+     "label": "入职日期：2023年3月15日"
+    }
+   ]
+  },
+  {
+   "id": "c-ab3aeb82",
+   "kind": "取值不一致",
+   "key": "leave_date",
+   "title": "离职日期不一致",
+   "description": "对方说明.docx：2024年2月26日；离职沟通.txt：2024年2月29日",
+   "sides": [
+    {
+     "fact_id": "f-914f313c",
+     "material_id": "m-88fd41d4a4",
+     "filename": "对方说明.docx",
+     "chunk_id": "m-88fd41d4a4:1:5",
+     "quote": "于2024年2月26日自行离职",
+     "proposer": "对方",
+     "label": "离职日期：2024年2月26日"
+    },
+    {
+     "fact_id": "f-a83ec034",
+     "material_id": "m-efb12ece17",
+     "filename": "离职沟通.txt",
+     "chunk_id": "m-efb12ece17:1:2",
+     "quote": "（2月29日）是最后一个工作日",
+     "proposer": "我方",
+     "label": "离职日期：2024年2月29日"
+    }
+   ]
+  },
+  {
+   "id": "c-70a79fe9",
+   "kind": "跨材料对不上",
+   "key": "social_first_month",
+   "title": "社保首次缴费晚于入职月",
+   "description": "入职 2023年3月1日，社保自 2023年4月 起缴",
+   "sides": [
+    {
+     "fact_id": "f-86c738d0",
+     "material_id": "m-98afb16117",
+     "filename": "入职通知.docx",
+     "chunk_id": "m-98afb16117:1:4",
+     "quote": "入职时间：2023年3月1日",
+     "proposer": "我方",
+     "label": "入职日期：2023年3月1日"
+    },
+    {
+     "fact_id": "f-fbcade9f",
+     "material_id": "m-762717a8e8",
+     "filename": "社保缴费记录.pdf",
+     "chunk_id": "m-762717a8e8:1:5",
+     "quote": "2023年04月　已缴费",
+     "proposer": "我方",
+     "label": "社保首次缴费月份：2023年4月"
+    }
+   ]
+  },
+  {
+   "id": "c-30581264",
+   "kind": "金额对不上",
+   "key": "base_salary",
+   "title": "约定月工资与实发不一致",
+   "description": "约定 15,000 元；2023年3月至2023年5月所属月份工资，每月实发 12,000 元",
+   "sides": [
+    {
+     "fact_id": "f-d4fb188c",
+     "material_id": "m-98afb16117",
+     "filename": "入职通知.docx",
+     "chunk_id": "m-98afb16117:1:6",
+     "quote": "月工资15000元",
+     "proposer": "我方",
+     "label": "约定月工资：15,000 元"
+    },
+    {
+     "fact_id": "f-6eeb4d58",
+     "material_id": "m-782ebef293",
+     "filename": "工资银行流水.pdf",
+     "chunk_id": "m-782ebef293:1:5",
+     "quote": "2023-04-10　工资（2023年3月）　12,000.00",
+     "proposer": "我方",
+     "label": "2023年3月至2023年5月所属月份工资，每月实发 12,000 元"
+    }
+   ]
+  },
+  {
+   "id": "c-81f47aec",
+   "kind": "陈述与记录需核对",
+   "key": "notice_claim",
+   "title": "对方称已通知签订，同日沟通记录显示仍在流程中",
+   "description": "2023年3月28日沟通记录里，公司回复“还在走流程，等通知”",
+   "sides": [
+    {
+     "fact_id": "f-9da7970a",
+     "material_id": "m-88fd41d4a4",
+     "filename": "对方说明.docx",
+     "chunk_id": "m-88fd41d4a4:1:3",
+     "quote": "于2023年3月28日通过微信通知其到人事部门签订书面劳动合同，张伟未予配合",
+     "proposer": "对方",
+     "label": "对方称已通知签订劳动合同（2023年3月28日），并称劳动者未予配合"
+    },
+    {
+     "fact_id": null,
+     "material_id": "m-6cf0394c87",
+     "filename": "工作沟通记录.txt",
+     "chunk_id": "m-6cf0394c87:1:8",
+     "quote": "2023-03-28 14:20 人事小李：还在走流程，等通知。",
+     "proposer": "我方",
+     "label": "同日沟通记录"
+    }
+   ]
+  }
+ ],
+ "elements": [
+  {
+   "id": "e1",
+   "name": "存在劳动关系",
+   "kind": "positive",
+   "authority": [
+    "劳动合同法-7"
+   ],
+   "fact_ids": [
+    "f-42dec3c5",
+    "f-6eeb4d58",
+    "f-86c738d0",
+    "f-b3f0f855",
+    "f-f53184a6",
+    "f-fbcade9f"
+   ],
+   "material_ids": [
+    "m-6cf0394c87",
+    "m-762717a8e8",
+    "m-782ebef293",
+    "m-98afb16117"
+   ],
+   "status": "充分",
+   "note": "6 条事实，4 份材料支撑",
+   "detail": null,
+   "dispute": null,
+   "tag": null,
+   "claim_id": "labor-double-wage-82",
+   "claim_title": "二倍工资差额",
+   "burden": null,
+   "hint": [],
+   "manual": false
+  },
+  {
+   "id": "e2",
+   "name": "未订立书面劳动合同",
+   "kind": "positive",
+   "authority": [
+    "劳动合同法-10",
+    "劳动合同法-82"
+   ],
+   "fact_ids": [
+    "f-c5f1f2a0",
+    "f-eb085810"
+   ],
+   "material_ids": [
+    "m-6cf0394c87",
+    "m-88fd41d4a4"
+   ],
+   "status": "充分",
+   "note": "2 条事实，2 份材料支撑",
+   "detail": null,
+   "dispute": null,
+   "tag": null,
+   "claim_id": "labor-double-wage-82",
+   "claim_title": "二倍工资差额",
+   "burden": null,
+   "hint": [],
+   "manual": false
+  },
+  {
+   "id": "e3",
+   "name": "起算：用工满一个月的次日",
+   "kind": "calc",
+   "authority": [
+    "劳动合同法实施条例-6"
+   ],
+   "fact_ids": [],
+   "material_ids": [],
+   "status": "充分",
+   "note": "自 2023年4月1日 起算",
+   "detail": {
+    "start": "2023-04-01"
+   },
+   "dispute": null,
+   "tag": null,
+   "claim_id": "labor-double-wage-82",
+   "claim_title": "二倍工资差额",
+   "burden": null,
+   "hint": [],
+   "manual": false
+  },
+  {
+   "id": "e4",
+   "name": "上限：最长十一个月",
+   "kind": "calc",
+   "authority": [
+    "劳动合同法实施条例-6"
+   ],
+   "fact_ids": [],
+   "material_ids": [],
+   "status": "充分",
+   "note": "满一年前一日为 2024年2月29日；离职日 2024年2月29日",
+   "detail": {
+    "cap_end": "2024-02-29",
+    "leave": "2024-02-29"
+   },
+   "dispute": null,
+   "tag": null,
+   "claim_id": "labor-double-wage-82",
+   "claim_title": "二倍工资差额",
+   "burden": null,
+   "hint": [],
+   "manual": false
+  },
+  {
+   "id": "e5",
+   "name": "未过仲裁时效",
+   "kind": "limitation",
+   "authority": [
+    "劳动争议调解仲裁法-27"
+   ],
+   "fact_ids": [],
+   "material_ids": [],
+   "status": "空缺",
+   "note": "没有任何关于申请仲裁日期的材料",
+   "detail": null,
+   "dispute": "起算口径地区有分歧（按月分别起算 / 按终止起算），需律师判断",
+   "tag": null,
+   "claim_id": "labor-double-wage-82",
+   "claim_title": "二倍工资差额",
+   "burden": null,
+   "hint": [],
+   "manual": false
+  },
+  {
+   "id": "n1",
+   "name": "非因劳动者拒绝签订",
+   "kind": "negative",
+   "authority": [
+    "劳动合同法实施条例-5"
+   ],
+   "fact_ids": [
+    "f-9da7970a",
+    "f-c5f1f2a0"
+   ],
+   "material_ids": [],
+   "status": "需律师判断",
+   "note": "对方提出了抗辩；我方沟通记录可作反证",
+   "detail": null,
+   "dispute": null,
+   "tag": "对方抗辩",
+   "claim_id": "labor-double-wage-82",
+   "claim_title": "二倍工资差额",
+   "burden": null,
+   "hint": [],
+   "manual": false
+  },
+  {
+   "id": "n2",
+   "name": "满一年未订立视为无固定期限合同的衔接",
+   "kind": "negative",
+   "authority": [
+    "劳动合同法-14",
+    "劳动合同法实施条例-7"
+   ],
+   "fact_ids": [],
+   "material_ids": [],
+   "status": "需律师判断",
+   "note": "离职早于满一年，通常不触发；是否适用由律师判断",
+   "detail": null,
+   "dispute": null,
+   "tag": null,
+   "claim_id": "labor-double-wage-82",
+   "claim_title": "二倍工资差额",
+   "burden": null,
+   "hint": [],
+   "manual": false
+  }
+ ],
+ "calc": {
+  "ok": true,
+  "start": "2023-04-01",
+  "end": "2024-02-29",
+  "months": 11,
+  "extra_days": 0,
+  "base": 15000,
+  "amount": 165000,
+  "capped": false,
+  "formula": "15,000 元 × 11 个月",
+  "period_text": "2023年4月1日至2024年2月29日",
+  "judgments": [
+   "月工资基数以约定工资计，是否按应得工资或实发工资计算需律师判断"
+  ]
+ },
+ "timeline": [
+  {
+   "date": "2023-03-01",
+   "event": "入职",
+   "proposer": "我方",
+   "origin": "材料"
+  },
+  {
+   "date": "2023-03-15",
+   "event": "对方称入职",
+   "proposer": "对方",
+   "fact_id": "f-f53184a6"
+  },
+  {
+   "date": "2023-03-20",
+   "event": "劳动者询问签订劳动合同",
+   "proposer": "我方",
+   "fact_id": "f-c5f1f2a0"
+  },
+  {
+   "date": "2023-03-28",
+   "event": "劳动者询问签订劳动合同",
+   "proposer": "我方",
+   "fact_id": "f-c5f1f2a0"
+  },
+  {
+   "date": "2023-03-28",
+   "event": "对方称通知签订劳动合同",
+   "proposer": "对方",
+   "fact_id": "f-9da7970a"
+  },
+  {
+   "date": "2023-04-01",
+   "event": "社保首次缴费",
+   "proposer": "我方",
+   "fact_id": "f-fbcade9f"
+  },
+  {
+   "date": "2023-06-15",
+   "event": "劳动者询问签订劳动合同",
+   "proposer": "我方",
+   "fact_id": "f-c5f1f2a0"
+  },
+  {
+   "date": "2023-09-08",
+   "event": "劳动者询问签订劳动合同",
+   "proposer": "我方",
+   "fact_id": "f-c5f1f2a0"
+  },
+  {
+   "date": "2024-02-26",
+   "event": "对方称离职",
+   "proposer": "对方",
+   "fact_id": "f-914f313c"
+  },
+  {
+   "date": "2024-02-29",
+   "event": "离职",
+   "proposer": "我方",
+   "origin": "材料"
+  }
+ ],
+ "summary": {
+  "充分": 4,
+  "薄弱": 0,
+  "空缺": 1
+ },
+ "claims": [
+  {
+   "claim_id": "labor-double-wage-82",
+   "key": "double-wage",
+   "title": "未订立书面劳动合同二倍工资差额",
+   "short": "二倍工资差额",
+   "legal_basis": [
+    "劳动合同法-82",
+    "劳动合同法实施条例-6"
+   ],
+   "needs_fields": [
+    "hire_date",
+    "leave_date",
+    "base_salary"
+   ],
+   "optional_fields": [],
+   "elements": 5,
+   "verified": false,
+   "note": "要件与口径为初稿，需律师逐条核对后方可对外使用。",
+   "calc": {
+    "ok": true,
+    "start": "2023-04-01",
+    "end": "2024-02-29",
+    "months": 11,
+    "extra_days": 0,
+    "base": 15000,
+    "amount": 165000,
+    "capped": false,
+    "formula": "15,000 元 × 11 个月",
+    "period_text": "2023年4月1日至2024年2月29日",
+    "judgments": [
+     "月工资基数以约定工资计，是否按应得工资或实发工资计算需律师判断"
+    ]
+   },
+   "counts": {
+    "充分": 4,
+    "薄弱": 0,
+    "空缺": 1
+   },
+   "element_ids": [
+    "e1",
+    "e2",
+    "e3",
+    "e4",
+    "e5",
+    "n1",
+    "n2"
+   ]
+  }
+ ],
+ "selected_claims": [
+  "labor-double-wage-82"
+ ],
+ "field_specs": [
+  {
+   "key": "hire_date",
+   "label": "入职日期",
+   "kind": "date",
+   "unit": "",
+   "help": ""
+  },
+  {
+   "key": "leave_date",
+   "label": "离职日期",
+   "kind": "date",
+   "unit": "",
+   "help": ""
+  },
+  {
+   "key": "base_salary",
+   "label": "月工资基数",
+   "kind": "int",
+   "unit": "元",
+   "help": "约定月工资，作为计算基数"
+  },
+  {
+   "key": "arb_apply_date",
+   "label": "申请仲裁日期",
+   "kind": "date",
+   "unit": "",
+   "help": ""
+  }
+ ],
+ "gate1": {
+  "confirmed": true,
+  "confirmed_at": "2026-10-30T02:40:35"
+ },
+ "element_library": {
+  "title": "二倍工资差额",
+  "verified_by": null,
+  "note": "要件与口径为初稿，需律师逐条核对后方可对外使用。"
+ }
+}

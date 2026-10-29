@@ -1,0 +1,45 @@
+{
+ "mode": "offline_demo",
+ "provider": null,
+ "external_requests": 0,
+ "file_types": [
+  ".txt",
+  ".md",
+  ".docx",
+  ".pdf"
+ ],
+ "ocr": false,
+ "exports": [
+  "docx",
+  "xlsx",
+  "zip",
+  "ics"
+ ],
+ "options": {
+  "categories": [
+   "身份",
+   "劳动关系",
+   "工资",
+   "社保",
+   "沟通记录",
+   "离职",
+   "对方证据",
+   "其他"
+  ],
+  "parties": [
+   "我方",
+   "对方",
+   "第三方"
+  ],
+  "stages": [
+   "仲裁申请前",
+   "仲裁审理中",
+   "诉讼一审",
+   "其他"
+  ],
+  "sides": [
+   "劳动者",
+   "用人单位"
+  ]
+ }
+}

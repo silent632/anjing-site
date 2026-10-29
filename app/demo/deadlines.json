@@ -1,0 +1,114 @@
+{
+ "nodes": [
+  {
+   "id": "d1",
+   "name": "仲裁时效",
+   "base_key": "leave_date",
+   "base_label": "劳动关系终止日",
+   "star": false,
+   "note": "",
+   "dispute": "起算口径地区有分歧（按终止起算 / 按月分别起算），此处按终止起算，需律师判断",
+   "authority": [
+    "劳动争议调解仲裁法-27"
+   ],
+   "base_date": null,
+   "due": null,
+   "status": "待录入",
+   "rule": "规则待核对"
+  },
+  {
+   "id": "d2",
+   "name": "仲裁审限",
+   "base_key": "arb_accept_date",
+   "base_label": "仲裁受理日",
+   "star": false,
+   "note": "可延长 15 日",
+   "dispute": null,
+   "authority": [],
+   "base_date": null,
+   "due": null,
+   "status": "待录入",
+   "rule": "规则待核对"
+  },
+  {
+   "id": "d3",
+   "name": "起诉期限",
+   "base_key": "award_receive_date",
+   "base_label": "收到裁决书之日",
+   "star": true,
+   "note": "逾期可能丧失起诉机会",
+   "dispute": null,
+   "authority": [],
+   "base_date": null,
+   "due": null,
+   "status": "待录入",
+   "rule": "规则待核对"
+  },
+  {
+   "id": "d4",
+   "name": "一审举证期限",
+   "base_key": "evidence_deadline",
+   "base_label": "法院指定的举证期限届满日",
+   "star": false,
+   "note": "由法院指定，手动录入",
+   "dispute": null,
+   "authority": [],
+   "base_date": null,
+   "due": null,
+   "status": "待录入",
+   "rule": "规则待核对"
+  },
+  {
+   "id": "d5",
+   "name": "上诉期限",
+   "base_key": "judgment_receive_date",
+   "base_label": "收到一审判决书之日",
+   "star": true,
+   "note": "逾期判决生效",
+   "dispute": null,
+   "authority": [],
+   "base_date": null,
+   "due": null,
+   "status": "待录入",
+   "rule": "规则待核对"
+  },
+  {
+   "id": "d6",
+   "name": "二审审限",
+   "base_key": "second_accept_date",
+   "base_label": "二审受理日",
+   "star": false,
+   "note": "",
+   "dispute": null,
+   "authority": [],
+   "base_date": null,
+   "due": null,
+   "status": "待录入",
+   "rule": "规则待核对"
+  },
+  {
+   "id": "d7",
+   "name": "执行时效",
+   "base_key": "judgment_effect_date",
+   "base_label": "判决生效日",
+   "star": false,
+   "note": "",
+   "dispute": null,
+   "authority": [],
+   "base_date": null,
+   "due": null,
+   "status": "待录入",
+   "rule": "规则待核对"
+  }
+ ],
+ "inputs": {
+  "arb_accept_date": null,
+  "award_receive_date": null,
+  "evidence_deadline": null,
+  "judgment_receive_date": null,
+  "second_accept_date": null,
+  "judgment_effect_date": null
+ },
+ "rule_status": "规则待核对",
+ "case_stage": "仲裁申请前"
+}

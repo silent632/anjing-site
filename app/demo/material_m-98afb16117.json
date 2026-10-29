@@ -1,0 +1,77 @@
+{
+ "id": "m-98afb16117",
+ "case_id": "case-demo0001",
+ "filename": "入职通知.docx",
+ "ext": ".docx",
+ "size": 37135,
+ "sha1": "d3fa11cc255d00efce35da7a8ea4c540e7e3ad67",
+ "category": "劳动关系",
+ "party": "我方",
+ "parse_status": "ok",
+ "parse_message": "",
+ "page_count": 1,
+ "para_count": 10,
+ "created_at": "2026-10-30T02:40:34",
+ "chunks": [
+  {
+   "chunk_id": "m-98afb16117:1:1",
+   "page": 1,
+   "seq": 1,
+   "text": "录用通知书（演示数据）"
+  },
+  {
+   "chunk_id": "m-98afb16117:1:2",
+   "page": 1,
+   "seq": 2,
+   "text": "致 张伟 先生："
+  },
+  {
+   "chunk_id": "m-98afb16117:1:3",
+   "page": 1,
+   "seq": 3,
+   "text": "经面试评估，我公司决定录用您担任软件工程师。现将有关事项通知如下："
+  },
+  {
+   "chunk_id": "m-98afb16117:1:4",
+   "page": 1,
+   "seq": 4,
+   "text": "一、入职时间：2023年3月1日，请于当日上午9:30到公司人事处报到。"
+  },
+  {
+   "chunk_id": "m-98afb16117:1:5",
+   "page": 1,
+   "seq": 5,
+   "text": "二、工作地点：上海市浦东新区（演示地址）。"
+  },
+  {
+   "chunk_id": "m-98afb16117:1:6",
+   "page": 1,
+   "seq": 6,
+   "text": "三、薪酬待遇：月工资15000元（税前），每月10日通过银行转账发放上月工资。"
+  },
+  {
+   "chunk_id": "m-98afb16117:1:7",
+   "page": 1,
+   "seq": 7,
+   "text": "四、劳动合同：入职后另行签订。"
+  },
+  {
+   "chunk_id": "m-98afb16117:1:8",
+   "page": 1,
+   "seq": 8,
+   "text": "上海示例科技有限公司 人事行政部"
+  },
+  {
+   "chunk_id": "m-98afb16117:1:9",
+   "page": 1,
+   "seq": 9,
+   "text": "2023年2月20日"
+  },
+  {
+   "chunk_id": "m-98afb16117:1:10",
+   "page": 1,
+   "seq": 10,
+   "text": "（本文件为演示数据，人物与公司均为虚构。）"
+  }
+ ]
+}

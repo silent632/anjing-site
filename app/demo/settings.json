@@ -1,0 +1,12 @@
+{
+ "mode": "offline_demo",
+ "base_url": "",
+ "model": "deepseek-chat",
+ "api_key_set": false,
+ "api_key_hint": "",
+ "timeout_s": 30,
+ "retries": 1,
+ "retention_days": 90,
+ "provider": null,
+ "health_ok": false
+}

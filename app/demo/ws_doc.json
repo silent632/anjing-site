@@ -1,0 +1,70 @@
+{
+ "stats": {
+  "cases": 1,
+  "todos": 3,
+  "overdue": 1,
+  "waiting_gate": 1
+ },
+ "cases": [
+  {
+   "id": "case-demo0001",
+   "name": "演示案件 · 未签书面劳动合同二倍工资差额",
+   "stage": "仲裁申请前",
+   "our_side": "劳动者",
+   "is_demo": true,
+   "progress": 38,
+   "next": {
+    "key": "finalize_doc",
+    "label": "审核并定稿",
+    "target": "documents",
+    "reason": "文书已生成，等待律师审核"
+   },
+   "risk_count": 3,
+   "workflow_status": "事实已确认"
+  }
+ ],
+ "todos": [
+  {
+   "case_id": "case-demo0001",
+   "case": "演示案件 · 未签书面劳动合同二倍工资差额",
+   "label": "审核并定稿",
+   "reason": "文书已生成，等待律师审核",
+   "target": "documents"
+  },
+  {
+   "case_id": "case-demo0001",
+   "case": "演示案件 · 未签书面劳动合同二倍工资差额",
+   "label": "需要处理",
+   "reason": "1 个要件没有材料支撑",
+   "target": "elements"
+  },
+  {
+   "case_id": "case-demo0001",
+   "case": "演示案件 · 未签书面劳动合同二倍工资差额",
+   "label": "需要处理",
+   "reason": "仲裁时效已过截止日 2025-02-28",
+   "target": "deadlines"
+  }
+ ],
+ "deadlines": [
+  {
+   "case_id": "case-demo0001",
+   "case": "演示案件 · 未签书面劳动合同二倍工资差额",
+   "id": "d1",
+   "name": "仲裁时效",
+   "base_key": "leave_date",
+   "base_label": "劳动关系终止日",
+   "star": false,
+   "note": "",
+   "dispute": "起算口径地区有分歧（按终止起算 / 按月分别起算），此处按终止起算，需律师判断",
+   "authority": [
+    "劳动争议调解仲裁法-27"
+   ],
+   "base_date": "2024-02-29",
+   "due": "2025-02-28",
+   "status": "已逾期",
+   "rule": "规则待核对",
+   "days_left": -609
+  }
+ ]
+}

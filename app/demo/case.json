@@ -1,0 +1,17 @@
+{
+ "id": "case-demo0001",
+ "name": "演示案件 · 未签书面劳动合同二倍工资差额",
+ "case_type": "劳动争议",
+ "stage": "仲裁申请前",
+ "our_side": "劳动者",
+ "number": "",
+ "lawyer": "",
+ "note": "全部材料为虚构演示数据",
+ "mode": "offline_demo",
+ "archived": false,
+ "is_demo": true,
+ "created_at": "2026-10-30T02:40:34",
+ "updated_at": "2026-10-30T02:40:34",
+ "material_count": 6,
+ "workflow_status": "未开始"
+}

@@ -1,0 +1,223 @@
+{
+ "items": [
+  {
+   "evidence_id": "ev-98afb16117",
+   "name": "入职通知",
+   "filename": "入职通知.docx",
+   "material_id": "m-98afb16117",
+   "provider": "我方",
+   "category": "劳动关系",
+   "target": "劳动关系的建立与入职时间",
+   "elements": [
+    {
+     "id": "e1",
+     "name": "存在劳动关系"
+    }
+   ],
+   "issues": [
+    "入职日期不一致",
+    "社保首次缴费晚于入职月",
+    "约定月工资与实发不一致"
+   ],
+   "advice": "补充劳动合同或能证明入职的其他材料。",
+   "lawyer_status": "待确认"
+  },
+  {
+   "evidence_id": "ev-88fd41d4a4",
+   "name": "对方说明",
+   "filename": "对方说明.docx",
+   "material_id": "m-88fd41d4a4",
+   "provider": "对方",
+   "category": "对方证据",
+   "target": "对方陈述的事实",
+   "elements": [
+    {
+     "id": "e1",
+     "name": "存在劳动关系"
+    },
+    {
+     "id": "e2",
+     "name": "未订立书面劳动合同"
+    },
+    {
+     "id": "n1",
+     "name": "非因劳动者拒绝签订"
+    }
+   ],
+   "issues": [
+    "入职日期不一致",
+    "离职日期不一致",
+    "对方称已通知签订，同日沟通记录显示仍在流程中"
+   ],
+   "advice": "要求对方提供原始附件，并在质证中核对。",
+   "lawyer_status": "待确认"
+  },
+  {
+   "evidence_id": "ev-6cf0394c87",
+   "name": "工作沟通记录",
+   "filename": "工作沟通记录.txt",
+   "material_id": "m-6cf0394c87",
+   "provider": "我方",
+   "category": "沟通记录",
+   "target": "用工事实与签订合同的沟通情况",
+   "elements": [
+    {
+     "id": "e1",
+     "name": "存在劳动关系"
+    },
+    {
+     "id": "e2",
+     "name": "未订立书面劳动合同"
+    },
+    {
+     "id": "n1",
+     "name": "非因劳动者拒绝签订"
+    }
+   ],
+   "issues": [
+    "对方称已通知签订，同日沟通记录显示仍在流程中"
+   ],
+   "advice": "保留聊天记录原始载体，必要时做公证或提供完整导出。",
+   "lawyer_status": "待确认"
+  },
+  {
+   "evidence_id": "ev-782ebef293",
+   "name": "工资银行流水",
+   "filename": "工资银行流水.pdf",
+   "material_id": "m-782ebef293",
+   "provider": "我方",
+   "category": "工资",
+   "target": "工资标准与发放情况",
+   "elements": [
+    {
+     "id": "e1",
+     "name": "存在劳动关系"
+    }
+   ],
+   "issues": [
+    "约定月工资与实发不一致"
+   ],
+   "advice": "核对流水与约定工资的差异，必要时补充工资条或劳动合同约定。",
+   "lawyer_status": "待确认"
+  },
+  {
+   "evidence_id": "ev-762717a8e8",
+   "name": "社保缴费记录",
+   "filename": "社保缴费记录.pdf",
+   "material_id": "m-762717a8e8",
+   "provider": "我方",
+   "category": "社保",
+   "target": "劳动关系与用工起始时间",
+   "elements": [
+    {
+     "id": "e1",
+     "name": "存在劳动关系"
+    }
+   ],
+   "issues": [
+    "社保首次缴费晚于入职月"
+   ],
+   "advice": "补充参保单位出具的缴费证明原件或官方查询截图。",
+   "lawyer_status": "待确认"
+  },
+  {
+   "evidence_id": "ev-efb12ece17",
+   "name": "离职沟通",
+   "filename": "离职沟通.txt",
+   "material_id": "m-efb12ece17",
+   "provider": "我方",
+   "category": "离职",
+   "target": "劳动关系终止与最后工作日",
+   "elements": [],
+   "issues": [
+    "离职日期不一致"
+   ],
+   "advice": "补充离职证明或交接清单。",
+   "lawyer_status": "待确认"
+  }
+ ],
+ "gaps": [
+  {
+   "element_id": "e5",
+   "element": "未过仲裁时效",
+   "status": "空缺",
+   "reason": "没有任何关于申请仲裁日期的材料",
+   "suggest": [
+    "申请仲裁的日期或计划日期",
+    "离职证明或劳动关系终止的凭证",
+    "向公司主张二倍工资的记录（可能中断时效）"
+   ],
+   "claim": "二倍工资差额"
+  }
+ ],
+ "has_opposing": true,
+ "crossexam": {
+  "has_opposing": true,
+  "message": "",
+  "items": [
+   {
+    "evidence_id": "ev-88fd41d4a4",
+    "filename": "对方说明.docx",
+    "material_id": "m-88fd41d4a4",
+    "party": "对方",
+    "category": "对方证据",
+    "paragraphs": 9,
+    "authenticity": "这是公司单方出具的说明。其中 3 处与我方材料对不上：入职日期不一致；离职日期不一致；对方称已通知签订，同日沟通记录显示仍在流程中。",
+    "legality": "取得方式、形成时间和出具人资格，需对照原件核对。落款只有“（公章）”标识，未见经办人署名。",
+    "relevance": "与以下要件相关：“存在劳动关系”、“未订立书面劳动合同”、“非因劳动者拒绝签订”。",
+    "probative": "单方陈述，缺少原始记录佐证；与沟通记录冲突的部分证明力偏弱。最终证明力由律师判断。",
+    "form_issues": [
+     "落款只有“（公章）”标识，未见经办人署名",
+     "说明没有附任何原始记录或附件",
+     "日期仅出现在落款处"
+    ],
+    "follow_ups": [
+     "请公司说明 2023年3月15日 入职的依据，例如考勤记录、工资单或入职登记。",
+     "请公司说明离职日期的依据；我方沟通记录显示最后工作日为交接当日。",
+     "请公司提供该次通知的原始微信记录，以及到场签订的安排。"
+    ],
+    "refs": {
+     "fact_ids": [
+      "f-914f313c",
+      "f-9da7970a",
+      "f-eb085810",
+      "f-f53184a6"
+     ],
+     "conflict_ids": [
+      "c-1568e2de",
+      "c-ab3aeb82",
+      "c-81f47aec"
+     ],
+     "element_ids": [
+      "e1",
+      "e2",
+      "n1"
+     ],
+     "authority_ids": [
+      "劳动合同法-10",
+      "劳动合同法-7",
+      "劳动合同法-82",
+      "劳动合同法实施条例-5"
+     ]
+    },
+    "risk": "高",
+    "lawyer_status": "待律师修改",
+    "needs_judgment": [
+     "证明力",
+     "合法性"
+    ],
+    "original": {},
+    "edited": []
+   }
+  ],
+  "element_names": {
+   "e1": "存在劳动关系",
+   "e2": "未订立书面劳动合同",
+   "e3": "起算：用工满一个月的次日",
+   "e4": "上限：最长十一个月",
+   "e5": "未过仲裁时效",
+   "n1": "非因劳动者拒绝签订",
+   "n2": "满一年未订立视为无固定期限合同的衔接"
+  }
+ }
+}

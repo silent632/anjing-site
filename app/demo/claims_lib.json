@@ -1,0 +1,115 @@
+[
+ {
+  "claim_id": "labor-double-wage-82",
+  "key": "double-wage",
+  "title": "未订立书面劳动合同二倍工资差额",
+  "short": "二倍工资差额",
+  "legal_basis": [
+   "劳动合同法-82",
+   "劳动合同法实施条例-6"
+  ],
+  "needs_fields": [
+   "hire_date",
+   "leave_date",
+   "base_salary"
+  ],
+  "optional_fields": [],
+  "elements": 5,
+  "verified": false,
+  "note": "要件与口径为初稿，需律师逐条核对后方可对外使用。"
+ },
+ {
+  "claim_id": "labor-severance-46-47",
+  "key": "severance",
+  "title": "经济补偿",
+  "short": "经济补偿",
+  "legal_basis": [
+   "劳动合同法-46",
+   "劳动合同法-47"
+  ],
+  "needs_fields": [
+   "hire_date",
+   "leave_date",
+   "base_salary"
+  ],
+  "optional_fields": [
+   "avg_wage"
+  ],
+  "elements": 4,
+  "verified": false,
+  "note": "要件、口径与条文为初稿，需律师逐条核对后方可对外使用。封顶规则（三倍社平工资、最长十二年）需按当地数据判断，本工具不自动计算。"
+ },
+ {
+  "claim_id": "labor-illegal-termination-48-87",
+  "key": "illegal-termination",
+  "title": "违法解除劳动合同赔偿金",
+  "short": "违法解除赔偿金",
+  "legal_basis": [
+   "劳动合同法-48",
+   "劳动合同法-87"
+  ],
+  "needs_fields": [
+   "hire_date",
+   "leave_date",
+   "base_salary"
+  ],
+  "optional_fields": [
+   "avg_wage"
+  ],
+  "elements": 5,
+  "verified": false,
+  "note": "要件、口径与条文为初稿，需律师逐条核对后方可对外使用。解除理由是否合法由律师判断；赔偿金与经济补偿不得重复主张。"
+ },
+ {
+  "claim_id": "labor-overtime-44",
+  "key": "overtime",
+  "title": "加班费",
+  "short": "加班费",
+  "legal_basis": [
+   "劳动法-44"
+  ],
+  "needs_fields": [
+   "base_salary",
+   "overtime_hours_weekday|overtime_hours_rest|overtime_hours_holiday"
+  ],
+  "optional_fields": [],
+  "elements": 5,
+  "verified": false,
+  "note": "要件、口径与条文为初稿，需律师逐条核对后方可对外使用。加班事实的举证责任分配、计算基数（约定工资或实发工资）需律师判断。"
+ },
+ {
+  "claim_id": "labor-arrears-30-85",
+  "key": "arrears",
+  "title": "拖欠劳动报酬",
+  "short": "拖欠工资",
+  "legal_basis": [
+   "劳动合同法-30",
+   "劳动合同法-85"
+  ],
+  "needs_fields": [
+   "arrears_amount"
+  ],
+  "optional_fields": [],
+  "elements": 4,
+  "verified": false,
+  "note": "要件、口径与条文为初稿，需律师逐条核对后方可对外使用。加付赔偿金（应付金额的百分之五十以上一百以下）以劳动行政部门责令限期支付为前提，是否主张由律师判断，不计入本工具给出的金额。"
+ },
+ {
+  "claim_id": "labor-annual-leave-regulation-5",
+  "key": "annual-leave",
+  "title": "未休年休假工资",
+  "short": "未休年休假工资",
+  "legal_basis": [
+   "职工带薪年休假条例-3",
+   "职工带薪年休假条例-5"
+  ],
+  "needs_fields": [
+   "base_salary",
+   "unused_leave_days"
+  ],
+  "optional_fields": [],
+  "elements": 4,
+  "verified": false,
+  "note": "要件、口径与条文为初稿，需律师逐条核对后方可对外使用。日工资按月工资÷21.75折算；本工具只计算应另行支付的百分之二百部分（正常工资已发），按百分之三百计的口径需律师判断。"
+ }
+]

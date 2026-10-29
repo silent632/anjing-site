@@ -1,0 +1,36 @@
+{
+ "stats": {
+  "cases": 1,
+  "todos": 1,
+  "overdue": 0,
+  "waiting_gate": 0
+ },
+ "cases": [
+  {
+   "id": "case-demo0001",
+   "name": "演示案件 · 未签书面劳动合同二倍工资差额",
+   "stage": "仲裁申请前",
+   "our_side": "劳动者",
+   "is_demo": true,
+   "progress": 25,
+   "next": {
+    "key": "analyse",
+    "label": "开始分析",
+    "target": "facts",
+    "reason": "材料已就绪，抽取事实并核对要件"
+   },
+   "risk_count": 0,
+   "workflow_status": "未开始"
+  }
+ ],
+ "todos": [
+  {
+   "case_id": "case-demo0001",
+   "case": "演示案件 · 未签书面劳动合同二倍工资差额",
+   "label": "开始分析",
+   "reason": "材料已就绪，抽取事实并核对要件",
+   "target": "facts"
+  }
+ ],
+ "deadlines": []
+}

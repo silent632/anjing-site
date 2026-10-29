@@ -1,0 +1,10 @@
+{
+ "mode": "offline_demo",
+ "provider": null,
+ "base_url": null,
+ "count": 0,
+ "bytes": 0,
+ "requests": [],
+ "retention_days": 90,
+ "scope": "只记录时间、目的、地址与发送大小，不记录正文。本机数据保存在应用的数据目录，删除按“应用层数据删除”处理。"
+}

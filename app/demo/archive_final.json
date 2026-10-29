@@ -1,0 +1,183 @@
+{
+ "items": [
+  {
+   "id": "a01",
+   "name": "劳动人事争议仲裁申请书",
+   "materials": [],
+   "generated": [
+    "劳动人事争议仲裁申请书"
+   ]
+  },
+  {
+   "id": "a02",
+   "name": "申请人身份材料",
+   "materials": [],
+   "generated": []
+  },
+  {
+   "id": "a03",
+   "name": "被申请人主体信息",
+   "materials": [],
+   "generated": []
+  },
+  {
+   "id": "a04",
+   "name": "授权委托书与所函",
+   "materials": [],
+   "generated": []
+  },
+  {
+   "id": "a05",
+   "name": "劳动关系证明（录用通知、劳动合同）",
+   "materials": [
+    {
+     "id": "m-98afb16117",
+     "filename": "入职通知.docx",
+     "category": "劳动关系",
+     "party": "我方"
+    }
+   ],
+   "generated": []
+  },
+  {
+   "id": "a06",
+   "name": "工资发放记录",
+   "materials": [
+    {
+     "id": "m-782ebef293",
+     "filename": "工资银行流水.pdf",
+     "category": "工资",
+     "party": "我方"
+    }
+   ],
+   "generated": []
+  },
+  {
+   "id": "a07",
+   "name": "社会保险缴费记录",
+   "materials": [
+    {
+     "id": "m-762717a8e8",
+     "filename": "社保缴费记录.pdf",
+     "category": "社保",
+     "party": "我方"
+    }
+   ],
+   "generated": []
+  },
+  {
+   "id": "a08",
+   "name": "工作与沟通记录",
+   "materials": [
+    {
+     "id": "m-6cf0394c87",
+     "filename": "工作沟通记录.txt",
+     "category": "沟通记录",
+     "party": "我方"
+    }
+   ],
+   "generated": []
+  },
+  {
+   "id": "a09",
+   "name": "离职相关材料",
+   "materials": [
+    {
+     "id": "m-efb12ece17",
+     "filename": "离职沟通.txt",
+     "category": "离职",
+     "party": "我方"
+    }
+   ],
+   "generated": []
+  },
+  {
+   "id": "a10",
+   "name": "对方提交的证据",
+   "materials": [
+    {
+     "id": "m-88fd41d4a4",
+     "filename": "对方说明.docx",
+     "category": "对方证据",
+     "party": "对方"
+    }
+   ],
+   "generated": []
+  },
+  {
+   "id": "a11",
+   "name": "质证意见",
+   "materials": [],
+   "generated": []
+  },
+  {
+   "id": "a12",
+   "name": "裁决书、调解书与送达回证",
+   "materials": [],
+   "generated": []
+  },
+  {
+   "id": "a13",
+   "name": "其他材料",
+   "materials": [],
+   "generated": []
+  }
+ ],
+ "options": [
+  {
+   "id": "a01",
+   "name": "劳动人事争议仲裁申请书"
+  },
+  {
+   "id": "a02",
+   "name": "申请人身份材料"
+  },
+  {
+   "id": "a03",
+   "name": "被申请人主体信息"
+  },
+  {
+   "id": "a04",
+   "name": "授权委托书与所函"
+  },
+  {
+   "id": "a05",
+   "name": "劳动关系证明（录用通知、劳动合同）"
+  },
+  {
+   "id": "a06",
+   "name": "工资发放记录"
+  },
+  {
+   "id": "a07",
+   "name": "社会保险缴费记录"
+  },
+  {
+   "id": "a08",
+   "name": "工作与沟通记录"
+  },
+  {
+   "id": "a09",
+   "name": "离职相关材料"
+  },
+  {
+   "id": "a10",
+   "name": "对方提交的证据"
+  },
+  {
+   "id": "a11",
+   "name": "质证意见"
+  },
+  {
+   "id": "a12",
+   "name": "裁决书、调解书与送达回证"
+  },
+  {
+   "id": "a13",
+   "name": "其他材料"
+  }
+ ],
+ "draft": false,
+ "draft_reason": null,
+ "folder": null
+}
