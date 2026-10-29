@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
 <title>案镜 · 面向律师的办案自动化</title>
-<meta name="description" content="案镜把案卷材料整理成可以追溯、可以核对的办案成果：事实回到原文，要件逐项核对，文书引用逐条核对，再做期限和归档。目前聚焦劳动争议。">
+<meta name="description" content="案镜把案卷材料整理成可以追溯、可以核对的办案成果：事实回到原文，要件逐项核对，文书引用逐条核对，再做期限和归档。">
 <link rel="icon" type="image/svg+xml" href="app/favicon.svg">
 <link rel="stylesheet" href="style.css">
 </head>
@@ -19,7 +19,7 @@
 <section class="hero">
   <div class="bg" aria-hidden="true"></div>
   <div class="wrap">
-    <span class="pill">目前聚焦劳动争议 · 默认在本机运行</span>
+    <span class="pill">默认在本机运行 · 外部请求 0 次</span>
     <h1>面向律师的<br>办案自动化</h1>
     <p class="lead">导入案卷材料，案镜抽取事实并标出原文出处，按要件核对缺口，找出材料之间对不上的地方；再起草文书、逐条核对引用，最后推算期限、整理归档。每一步由律师确认。</p>
     <div class="cta"><a class="btn light" href="app/">体验演示<span class="arr">→</span></a><a class="btn ghost" href="#video">看视频</a></div>
@@ -123,7 +123,7 @@
     <details><summary>会不会替代律师？</summary><p>不会。策略、取舍、和解、风险偏好始终属于律师。案镜减少的是翻卷宗、对数据、整理格式这类重复劳动。</p></details>
     <details><summary>和普通的 AI 问答有什么区别？</summary><p>问答给你一段话。案镜围绕一个案件工作：材料、事实、要件、证据、文书共用同一份资料，每条结论可以回到原文，改一处，相关结果同步变化。</p></details>
     <details><summary>法条、案例的真实性怎么保证？</summary><p>文书里的每处引用，由代码核对是否存在于法源库；不存在的会被阻断。但“存在”不等于“适用正确”，适用性由律师判断。法源库以人工核对为准，并标注核对日期；尚未核对的标“待核对”，演示用的合成案例会标明不得作为真实引用。</p></details>
-    <details><summary>现在支持哪些案由和功能？</summary><div><p>目前聚焦劳动争议，请求库有六项：二倍工资差额、经济补偿、违法解除赔偿金、加班费、拖欠工资、未休年休假工资。其中二倍工资差额的事实可由材料自动抽取；其余请求的事实，需要律师在对表里关联到要件。这六项的要件、口径和条文目前都是待核对的初稿。我们不声称已覆盖所有案由。</p>
+    <details><summary>现在支持哪些案由和功能？</summary><div><p>案由方面支持劳动争议，请求库有六项：二倍工资差额、经济补偿、违法解除赔偿金、加班费、拖欠工资、未休年休假工资。其中二倍工资差额的事实可由材料自动抽取；其余请求的事实，需要律师在对表里关联到要件。这六项的要件、口径和条文目前都是待核对的初稿。我们不声称已覆盖所有案由。</p>
       <div class="scope" style="margin-top:14px"><div><h4>已经可用</h4><ul><li>材料导入、读卷与事实审阅、矛盾并排、时间线</li><li>要件核对、金额测算、证据目录、质证意见（可改写）</li><li>文书起草与引用核对、导出 Word</li><li>劳动者一方的申请书、起诉状；用人单位一方的答辩状初稿</li><li>期限、归档、法院短信、法源库导入</li></ul></div>
       <div><h4>暂未提供</h4><ul><li>扫描件识别（OCR）</li><li>用人单位一方的质证意见模板</li><li>劳动争议以外的案由</li><li>当事人补充材料的公开上传链接</li><li>法院自动立案（立案由律师亲自完成）</li></ul></div></div></div></details>
     <details><summary>能不能部署在所里的内网？</summary><p>案镜以本地安装为主，数据放在你的电脑上。模型服务地址可以配置，也可以指向所里自己的服务。具体方式请与我们沟通。</p></details>
