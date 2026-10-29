@@ -11,7 +11,7 @@
 <body>
 <header class="top"><div class="wrap">
   <a class="logo" href="#top"><i>案</i>案镜</a>
-  <nav aria-label="页面导航"><a href="#show">功能</a><a href="#try">试一试</a><a href="#claims">劳动争议</a><a href="#trust">引用与数据</a><a href="#faq">常见问题</a></nav>
+  <nav aria-label="页面导航"><a href="#show">功能</a><a href="#try">试一试</a><a href="#claims">请求库</a><a href="#trust">引用与数据</a><a href="#faq">常见问题</a></nav>
   <a class="btn light" href="app/">体验演示</a>
 </div></header>
 
@@ -90,8 +90,8 @@
 
 <section class="dark claims" id="claims"><div class="wrap grid">
   <div>
-    <p class="eyebrow">劳动争议</p>
-    <h2>一个案件可以同时主张多项请求，劳动者和用人单位两方都能用</h2>
+    <p class="eyebrow">请求库</p>
+    <h2>一个案件可以同时主张多项请求，原告和被告两方都能用</h2>
     <div class="list" role="tablist" aria-label="请求" id="clist"></div>
     <p class="note">请求的要件、口径和条文都是初稿，页面上统一标“待核对”，律师核对后才能对外使用。</p>
   </div>
@@ -110,7 +110,7 @@
 <section class="video" id="video"><div class="wrap">
   <p class="eyebrow">视频</p>
   <h2>看一个案件怎么办</h2>
-  <p>一个演示案件，从委托走到定稿，约一分钟。</p>
+  <p>一个演示案件，从委托走到定稿。</p>
   <div class="player"><video src="assets/film.mp4" poster="assets/film-poster.jpg" controls playsinline preload="metadata" style="position:absolute;inset:0;width:100%;height:100%;opacity:1;filter:none">宣传片：一个案件从委托到定稿</video></div>
 </div></section>
 
@@ -123,9 +123,9 @@
     <details><summary>会不会替代律师？</summary><p>不会。策略、取舍、和解、风险偏好始终属于律师。案镜减少的是翻卷宗、对数据、整理格式这类重复劳动。</p></details>
     <details><summary>和普通的 AI 问答有什么区别？</summary><p>问答给你一段话。案镜围绕一个案件工作：材料、事实、要件、证据、文书共用同一份资料，每条结论可以回到原文，改一处，相关结果同步变化。</p></details>
     <details><summary>法条、案例的真实性怎么保证？</summary><p>文书里的每处引用，由代码核对是否存在于法源库；不存在的会被阻断。但“存在”不等于“适用正确”，适用性由律师判断。法源库以人工核对为准，并标注核对日期；尚未核对的标“待核对”，演示用的合成案例会标明不得作为真实引用。</p></details>
-    <details><summary>现在支持哪些案由和功能？</summary><div><p>案由方面支持劳动争议，请求库有六项：二倍工资差额、经济补偿、违法解除赔偿金、加班费、拖欠工资、未休年休假工资。其中二倍工资差额的事实可由材料自动抽取；其余请求的事实，需要律师在对表里关联到要件。这六项的要件、口径和条文目前都是待核对的初稿。我们不声称已覆盖所有案由。</p>
+    <details><summary>请求库现在有哪些请求？</summary><div><p>请求库目前收录六项：二倍工资差额、经济补偿、违法解除赔偿金、加班费、拖欠工资、未休年休假工资。其中二倍工资差额的事实可由材料自动抽取；其余请求的事实，需要律师在对表里关联到要件。这六项的要件、口径和条文目前都是待核对的初稿。新的请求按同样的结构加入，我们不声称已经覆盖所有请求类型。</p>
       <div class="scope" style="margin-top:14px"><div><h4>已经可用</h4><ul><li>材料导入、读卷与事实审阅、矛盾并排、时间线</li><li>要件核对、金额测算、证据目录、质证意见（可改写）</li><li>文书起草与引用核对、导出 Word</li><li>劳动者一方的申请书、起诉状；用人单位一方的答辩状初稿</li><li>期限、归档、法院短信、法源库导入</li></ul></div>
-      <div><h4>暂未提供</h4><ul><li>扫描件识别（OCR）</li><li>用人单位一方的质证意见模板</li><li>劳动争议以外的案由</li><li>当事人补充材料的公开上传链接</li><li>法院自动立案（立案由律师亲自完成）</li></ul></div></div></div></details>
+      <div><h4>暂未提供</h4><ul><li>扫描件识别（OCR）</li><li>用人单位一方的质证意见模板</li><li>当事人补充材料的公开上传链接</li><li>法院自动立案（立案由律师亲自完成）</li></ul></div></div></div></details>
     <details><summary>能不能部署在所里的内网？</summary><p>案镜以本地安装为主，数据放在你的电脑上。模型服务地址可以配置，也可以指向所里自己的服务。具体方式请与我们沟通。</p></details>
     <details><summary>文书能导出到 Word 吗？</summary><p>能。文书导出为 docx，证据目录导出为 xlsx，也可以导出成果包。导出之后在 Word 里的修改不会回到系统，系统只记录导出的版本。</p></details>
   </div>
@@ -134,7 +134,7 @@
 
 <footer><div class="wrap">
   <div><a class="logo" href="#top"><i>案</i>案镜</a><p style="margin-top:12px">面向律师的办案自动化</p><p>东昕公司</p></div>
-  <div><h4>页面</h4><a href="#show">功能</a><a href="#try">试一试</a><a href="#claims">劳动争议</a><a href="#faq">常见问题</a><a href="app/">体验演示</a></div>
+  <div><h4>页面</h4><a href="#show">功能</a><a href="#try">试一试</a><a href="#claims">请求库</a><a href="#faq">常见问题</a><a href="app/">体验演示</a></div>
   <div><h4>联系</h4><p>联系方式：<span data-todo>【待补充】</span></p><p>邮箱：<span data-todo>【待补充】</span></p></div>
   <p class="fine">演示中的案件、人物与公司均为虚构。案镜是辅助工具，结论由律师审核并负责。</p>
 </div></footer>
